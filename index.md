@@ -1,4 +1,7 @@
-# AI Systems & Automation Engineering
+---
+layout: default
+title: AI Systems & Automation Engineering
+---
 
 Production AI orchestration frameworks for autonomous business operations.
 
