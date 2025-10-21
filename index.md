@@ -1,127 +1,181 @@
 # Jordan Waxman
 
-**Technical Program Manager | AI/ML Operations | Automation & Systems**
+**AI Systems & Automation Engineering**
+
+Building production AI orchestration frameworks for autonomous business operations.
 
 ---
 
 ## About
 
-13+ years delivering high-impact operations and program management across Amazon, Flexport, and startup environments. Proven track record scaling global programs, building automation systems, and leading cross-functional teams through complex technical initiatives.
+I build AI-native systems that transform session-based AI into autonomous business operations. Currently operating **MRMINOR LLC**, where I design and implement production automation frameworks managing a real e-commerce business with 40 minutes of daily oversight.
 
-Currently building AI-native business operations at **MRMINOR LLC**, where I design and implement production automation frameworks showcased in this portfolio.
+This portfolio showcases the production-tested frameworks and systems I've built, demonstrating practical applications of AI orchestration, document automation, and operational excellence.
 
-**Core Expertise:**
-- Technical Program Management (L6 @ Amazon)
-- AI/ML Operations & Automation
-- Global Logistics & Supply Chain
-- Cross-functional Team Leadership
-- Data-Driven Decision Making
-
----
-
-## Professional Experience
-
-### **Amazon** | Sr. Technical Program Manager, L6
-*March 2021 - September 2024 (3.5 years)*
-
-Led strategic programs across Prime Video Supply Chain and Alexa Shopping, managing vendor relationships, driving operational excellence, and building scalable systems for global content delivery.
-
-**Key Achievements:**
-- Delivered $3.75M+ in measurable business impact across multiple initiatives
-- Led 30+ person teams across 4 time zones (US, India, Costa Rica, Romania)
-- Built automated order tracking system reducing manual effort 90%
-- Managed $50M+ vendor relationships with enterprise negotiation
-
-### **Flexport** | Senior Supply Chain Operations Manager
-*November 2018 - February 2021 (2.3 years)*
-
-Scaled operational processes, built training programs, and led strategic initiatives during rapid company growth (unicorn startup).
-
-**Key Achievements:**
-- Rebuilt onboarding program, training 100+ new hires
-- Led 6-person team managing high-complexity freight operations
-- Designed SOP framework adopted company-wide
-
-### **Earlier Career**
-- **Global Forwarding** | Operations Manager (2016-2018)
-- **Hellmann Worldwide Logistics** | Operations Manager (2012-2016)
-
-*13+ years total experience in operations, program management, and team leadership*
+**Focus Areas:**
+- AI Session Orchestration
+- Autonomous Decision Systems
+- Document Automation & Intelligence
+- Quality Assurance Frameworks
+- Operational Process Automation
 
 ---
 
-## MRMINOR LLC Projects
+## Production AI Systems
 
-### Production Automation Frameworks
+These frameworks are extracted from real business operations, sanitized for public sharing. They're not toy projects - they manage live business operations daily.
 
-Building and operating an e-commerce business with AI-native automation systems. These are production-tested frameworks I use daily, sanitized for public sharing:
+### 🤖 [AI Session Orchestration Framework](https://github.com/MrMinor-dev/ai-session-orchestration)
 
-**🔗 [AI Session Orchestration Framework](https://github.com/MrMinor-dev/ai-session-orchestration)** *(Coming Soon)*
-- Manages long-running AI operations with autonomous decision-making
-- Progressive autonomy model (Level 1 → Level 5)
-- Incremental state management preventing context loss
+**Challenge:** Session-based AI has no memory between conversations  
+**Solution:** Three-layer architecture (automation + document state + agentic sessions)  
+**Impact:** 24/7 business operations from 40 min/day human time
 
-**🔗 [Document Autonomy System](https://github.com/MrMinor-dev/document-autonomy-system)** *(Coming Soon)*
-- Hybrid markdown + XML documentation enabling machine-readable business rules
+**Key Innovations:**
+- Progressive autonomy model (Level 1→5)
+- Context restoration <5 minutes
+- Zero context loss between sessions
+- Hybrid markdown + XML for machine-readable business rules
+
+**Tech Stack:** Claude API, n8n, markdown, XML, Google Drive
+
+---
+
+### 📚 [Document Autonomy System](https://github.com/MrMinor-dev/document-autonomy-system) *(Coming Soon)*
+
+**Challenge:** Documentation that enables both human understanding and AI automation  
+**Solution:** Hybrid format combining markdown (human-readable) + XML (machine-queryable)
+
+**Key Innovations:**
 - Decision matrices with programmatic thresholds
-- Bridges human readability with automation capabilities
+- Risk assessment scoring
+- Escalation protocols with trigger conditions
+- Bidirectional cross-references
 
-**🔗 [Automated File Management](https://github.com/MrMinor-dev/automated-file-management)** *(Coming Soon)*
-- Cross-platform file operations with validation
-- Auto-indexing and cross-referencing protocols
-- Production file naming conventions and standards
-
-**🔗 [Quality Assurance Framework](https://github.com/MrMinor-dev/qa-framework)** *(Coming Soon)*
-- 8-step pre-flight validation system
-- Zero-tolerance error prevention
-- Content quality scoring and monitoring
-
-**🔗 [Incremental Update Protocol](https://github.com/MrMinor-dev/incremental-update-protocol)** *(Coming Soon)*
-- Prevents data loss in long-running operations
-- Token monitoring with automatic breakpoints
-- Production-tested in AI session management
-
-*Additional frameworks and systems documentation in development*
+**Tech Stack:** Markdown, XML, Python validation scripts
 
 ---
 
-## Technical Skills
+### 📁 [Automated File Management](https://github.com/MrMinor-dev/automated-file-management) *(Coming Soon)*
 
-**Programming & Development:**
-- Python, JavaScript, Markdown
-- Git/GitHub, CI/CD workflows
-- API integration and automation
+**Challenge:** Consistent file operations across platforms with zero errors  
+**Solution:** Automated indexing, validation, and cross-referencing protocols
 
-**Cloud & Infrastructure:**
-- AWS (Cloud Practitioner knowledge)
-- Google Cloud Platform
-- Cloudflare Pages, Supabase
+**Key Innovations:**
+- Auto-updating file index on every operation
+- Kebab-case naming convention enforcement
+- Cross-platform path validation
+- Automated backup verification
 
-**Automation & AI:**
-- n8n workflow automation
-- Claude AI/LLM integration
-- AI orchestration patterns
-- Prompt engineering
-
-**Data & Analytics:**
-- SQL, Excel advanced functions
-- Data visualization
-- Metrics-driven decision making
-
-**Program Management:**
-- Agile/Scrum methodologies
-- Cross-functional team leadership
-- Vendor/stakeholder management
-- Process optimization
+**Tech Stack:** Python, Git, filesystem APIs
 
 ---
 
-## Education & Certifications
+### ✅ [Quality Assurance Framework](https://github.com/MrMinor-dev/qa-framework) *(Coming Soon)*
 
-**Bachelor of Arts, History**
-University of Wisconsin - Madison
+**Challenge:** Preventing errors in AI-generated content and automated workflows  
+**Solution:** 8-step pre-flight validation system with zero-tolerance approach
 
-**AWS Cloud Practitioner** *(In Progress)*
+**Key Innovations:**
+- Content quality scoring
+- Automated compliance checking
+- Multi-tier audit schedules
+- Error pattern detection
+
+**Tech Stack:** n8n workflows, Claude API, validation scripts
+
+---
+
+### 🔄 [Incremental Update Protocol](https://github.com/MrMinor-dev/incremental-update-protocol) *(Coming Soon)*
+
+**Challenge:** Context loss in long-running AI sessions due to token limits  
+**Solution:** Automatic state updates every 30 minutes, preventing data loss
+
+**Key Innovations:**
+- Token usage monitoring (70%/85%/95% thresholds)
+- Automatic breakpoint detection
+- Graceful session handoff
+- Never lose >30 minutes of work
+
+**Tech Stack:** Python monitoring, markdown state files
+
+---
+
+## Technical Stack
+
+**AI & Automation:**
+- Claude (Anthropic) - AI orchestration
+- n8n - Workflow automation
+- Python - Scripts and validation
+- API integration patterns
+
+**Data & Documentation:**
+- Markdown + XML hybrid format
+- Git version control
+- Google Drive cloud storage
+- Automated indexing systems
+
+**Infrastructure:**
+- Cloudflare Pages
+- Supabase (PostgreSQL)
+- GitHub Actions (CI/CD)
+- 11ty static site generation
+
+---
+
+## Design Philosophy
+
+**1. Production-First**
+- Systems built for real operations, not demos
+- Patterns designed for enterprise scale
+- Battle-tested through daily use
+
+**2. Documentation-Driven**
+- Human-readable AND machine-queryable
+- Self-documenting systems
+- Clear decision authority
+
+**3. Progressive Autonomy**
+- Start with human-in-loop
+- Gradually increase AI authority
+- Measurable trust building
+
+**4. Graceful Failure**
+- Systems work even when AI unavailable
+- Clear escalation protocols
+- Automated error recovery
+
+---
+
+## Metrics
+
+**AI Session Orchestration (3 months production):**
+- Context restoration: <5 minutes
+- Level 1 autonomy: 85% execution rate
+- Level 2 proposals: 78% acceptance rate
+- Strategic surprises: 0 (100% proactive)
+- Uptime: 99.9% (24/7 operations)
+
+**Business Impact:**
+- $147.99/month budget → Full business automation
+- 40 min/day → 24/7 operations
+- 10x decision speed improvement
+- Scales from 1 to N businesses
+
+---
+
+## About MRMINOR LLC
+
+An e-commerce business built as a proving ground for AI-native operations. Every system in this portfolio is production-tested managing real business operations including:
+
+- Product research and content generation
+- Affiliate program management
+- Financial tracking and compliance
+- Quality assurance and monitoring
+- Partnership evaluation
+- Multi-platform content distribution
+
+**The Goal:** Demonstrate that session-based AI can manage continuous business operations through intelligent orchestration, progressive autonomy, and state persistence.
 
 ---
 
@@ -129,19 +183,18 @@ University of Wisconsin - Madison
 
 - **GitHub:** [@MrMinor-dev](https://github.com/MrMinor-dev)
 - **Email:** waxmanj@mac.com
-- **LinkedIn:** [linkedin.com/in/jordan-waxman](https://linkedin.com/in/jordan-waxman)
 - **Location:** Seattle, WA
 
 ---
 
-## About This Portfolio
+## Portfolio Status
 
-This portfolio showcases production automation frameworks developed while operating MRMINOR LLC. These are real systems managing live business operations, demonstrating practical application of AI orchestration, document automation, quality assurance, and operational excellence principles.
+**Current:** 1 of 5 frameworks published (AI Session Orchestration)  
+**Next:** Document Autonomy System (November 2025)  
+**Timeline:** All 5 frameworks public by end of Q4 2025
 
-**Portfolio Philosophy:**
-- Real production systems, not toy projects
-- Patterns applicable at enterprise scale
-- Documentation-first approach
-- Built for maintainability and clarity
+*These are real production systems, not academic exercises. Each framework solves actual operational challenges encountered while building AI-native business operations.*
+
+---
 
 **Last Updated:** October 2025
