@@ -1,16 +1,12 @@
-# Jordan Waxman
+# AI Systems & Automation Engineering
 
-**AI Systems & Automation Engineering**
-
-Building production AI orchestration frameworks for autonomous business operations.
+Production AI orchestration frameworks for autonomous business operations.
 
 ---
 
 ## About
 
-I build AI-native systems that transform session-based AI into autonomous business operations. Currently operating **MRMINOR LLC**, where I design and implement production automation frameworks with 40 minutes of daily oversight.
-
-This portfolio showcases production-tested frameworks demonstrating practical applications of AI orchestration, document automation, and operational excellence.
+AI-native systems that transform session-based AI into autonomous business operations. This portfolio showcases production-tested frameworks demonstrating practical applications of AI orchestration, document automation, and operational excellence.
 
 **Focus Areas:**
 - AI Session Orchestration
@@ -186,7 +182,7 @@ These frameworks are extracted from real business operations, sanitized for publ
 **Data & Documentation:**
 - Markdown + XML hybrid format
 - Git version control
-- Google Drive cloud storage with auto-sync
+- Cloud storage with auto-sync
 - Automated indexing systems
 
 **Infrastructure:**
@@ -251,9 +247,9 @@ These frameworks are extracted from real business operations, sanitized for publ
 
 ---
 
-## About MRMINOR LLC
+## About This Portfolio
 
-An e-commerce business built as a proving ground for AI-native operations. Every framework in this portfolio is production-tested managing real operational workflows including:
+These frameworks are extracted from real e-commerce business operations managing:
 
 - Financial tracking and automation (invoice processing, expense tracking)
 - Document management (77 documents with full autonomy coverage)
@@ -261,7 +257,7 @@ An e-commerce business built as a proving ground for AI-native operations. Every
 - Security operations (100% attack prevention)
 - Continuous improvement (150+ patterns identified)
 
-**The Goal:** Demonstrate that session-based AI can manage continuous business operations through intelligent orchestration, progressive autonomy, and state persistence - without requiring always-on AI or AGI.
+**The Goal:** Demonstrate that session-based AI can manage continuous business operations through intelligent orchestration, progressive autonomy, and state persistence.
 
 ---
 
@@ -273,14 +269,6 @@ An e-commerce business built as a proving ground for AI-native operations. Every
 
 ---
 
-## Portfolio Status
+**Last Updated:** October 2025
 
-**Published:** 6 of 7 frameworks live ✅  
-**All frameworks:** Production-tested, fully documented  
-**Updated:** October 2025
-
----
-
-**Last Updated:** October 20, 2025
-
-*These are real production systems managing live business operations, not academic exercises. Each framework solves actual operational challenges encountered while building AI-native autonomous systems.*
+*Production systems managing live business operations. Each framework solves actual operational challenges encountered while building AI-native autonomous systems.*
