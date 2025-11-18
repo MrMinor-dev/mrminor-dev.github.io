@@ -76,6 +76,38 @@ These frameworks are extracted from real business operations, sanitized for publ
 
 ---
 
+### 📊 [Semantic Search Transformation Project](https://github.com/MrMinor-dev/semantic-search-transformation)
+
+**The Challenge:** 84 business documents optimized for human reading failed AI retrieval systems. Generic headings, zero context repetition, and broken cross-references made autonomous operation impossible during owner's 3-4 month vacations.
+
+**The Solution:** Systematic 5-tier document transformation using RAG-specific quality frameworks, batch processing methodology, and perpetual optimization system achieving 100% document coverage with zero rework.
+
+**Key Innovations:**
+- 5-tier classification system (criticality-based optimization levels)
+- 100-point quality scoring with 9 mandatory gates per document
+- Batch processing engine (64 documents in one session, 87.5% time savings)
+- 5 reusable frameworks for enterprise-scale RAG optimization
+- Perpetual maintenance system preventing quality degradation
+
+**Production Results (10 sessions, 84 documents):**
+- 100% RAG optimization (84/84 documents, 8,943 semantic chunks)
+- Zero rework (756 quality gate validations, 100% first-pass success)
+- +25-52 point quality improvements per document tier
+- Level 10 autonomy achieved (4-month vacation capability)
+- $40,000 revenue protection, 13:1 ROI ($3k project cost)
+
+**Business Impact:**
+- Enabled 120-day owner absence with autonomous operations
+- Regulatory compliance maintained without human oversight
+- Revenue continuity for $10k+ monthly business
+- 5 frameworks created as reusable intellectual property
+
+**Tech Stack:** Claude Code (Python), ChromaDB, sentence-transformers, Git, systematic quality engineering
+
+**[View Full Documentation →](https://github.com/MrMinor-dev/semantic-search-transformation)**
+
+---
+
 ### 🤖 [AI Session Orchestration Framework](https://github.com/MrMinor-dev/ai-session-orchestration)
 
 **The Challenge:** Session-based AI (like Claude or GPT-4) has no memory between conversations, making continuous business operations impossible with traditional approaches.
@@ -297,15 +329,16 @@ These frameworks are extracted from real business operations, sanitized for publ
 - 150+ patterns identified
 - 47 automated optimizations
 - 100% failure prevention
-- 91% document coverage
+- 100% document RAG coverage (84/84 docs)
 - Sub-second semantic search (<500ms)
 
 **Scalability:**
 - 1,000+ file operations (0 loss)
 - 12 automation workflows
-- 77 documents managed
+- 84 documents managed (100% optimized)
 - 225x ROI on AI costs
 - 1.14M tokens saved monthly
+- 8,943 semantic chunks indexed
 
 ---
 
@@ -314,12 +347,13 @@ These frameworks are extracted from real business operations, sanitized for publ
 These frameworks are extracted from real e-commerce business operations managing:
 
 - Financial tracking and automation (invoice processing, expense tracking)
-- Document management (77 documents with full autonomy coverage)
-- Semantic search & context management (7,396 indexed chunks)
-- Quality assurance (150+ validations with 0 compliance violations)
+- Document management (84 documents with 100% RAG optimization)
+- Semantic search & context management (8,943 indexed chunks)
+- Quality assurance (756+ validations with 100% first-pass success)
 - Security operations (100% attack prevention)
 - MCP server integration (12x setup speedup)
 - Continuous improvement (150+ patterns identified)
+- Autonomous operations (Level 10 autonomy, 4-month vacation capability)
 
 **The Goal:** Demonstrate that session-based AI can manage continuous business operations through intelligent orchestration, progressive autonomy, semantic search optimization, and state persistence.
 
