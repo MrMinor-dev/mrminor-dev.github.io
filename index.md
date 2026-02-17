@@ -23,7 +23,7 @@ The hardest problems in AI security aren't purely technical — they're governan
 | **Database** | PostgreSQL schema evolved v1 → v7.14, 50+ tables, zero data loss | 14 additive-only migrations with 7-step checklist |
 | **Defense-in-depth** | 4-layer deployment protection: validation → health checks → auto-rollback → cooldown | Zero customer-visible outages |
 | **Search infrastructure** | 17,428 embedded chunks with sub-second retrieval and hash-based change detection | Incremental updates <10s vs 5+ min full rebuilds |
-| **Automation** | 14 production workflows with 60-point audit framework across 13 categories | Systematic debugging: 4 documented failure patterns |
+| **Automation** | 33 production workflows with 60-point audit framework across 13 categories | Systematic debugging: 4 documented failure patterns |
 | **Compliance** | Prohibited content enforcement with severity tiers, FTC/Amazon ToS mapping | Autonomous audit capability |
 | **Continuity** | 4-layer state management for session-based AI with no persistent memory | Zero unexpected cutoffs in 200+ sessions |
 | **Skills framework** | 8 versioned capability modules with standardized contracts | Consistent autonomous execution across 100+ sessions |
@@ -98,7 +98,7 @@ When "how autonomous should this agent be?" had no clear answer, created a 10-le
 
 **17-service agentic operating system.** Architected a service-oriented platform across 7 operational domains (Content, Finance, Compliance, Learning, Infrastructure, Database, Website) with contract-based interfaces and a consumer matrix tracking which business units use which services.
 
-**14 production automation workflows.** Built, tested, and maintained 14 n8n workflows with a 60-point audit framework across 13 validation categories. Systematic debugging methodology identified 4 common failure patterns (type mismatches, merge node misconfiguration, Postgres parameterization errors, credential stripping).
+**33 production automation workflows.** Built, tested, and maintained 33 n8n workflows with a 60-point audit framework across 13 validation categories. Systematic debugging methodology identified 4 common failure patterns (type mismatches, merge node misconfiguration, Postgres parameterization errors, credential stripping).
 
 **Multi-agent coordination architecture.** Designed coordination topologies (hierarchical, peer-to-peer), state sharing approaches, and standardized handoff contracts across 8 production skills. Research incorporated patterns from AWS Agent Squad, claude-flow, and 108-agent frameworks.
 
@@ -120,7 +120,7 @@ When "how autonomous should this agent be?" had no clear answer, created a 10-le
 
 ### LLM Automation & Novel Solutions
 
-**Human-AI Operating System (HAIOS).** 350+ sessions, 17 services, 8 skills, 14 workflows, 17,428 embedded chunks, 50+ tables, 50,000+ words of documentation.
+**Human-AI Operating System (HAIOS).** 350+ sessions, 17 services, 8 skills, 33 workflows, 17,428 embedded chunks, 50+ tables, 50,000+ words of documentation.
 
 **Skills framework.** 8 versioned capability modules with standardized contracts (trigger/inputs/workflow/outputs/error handling). Consistent execution across 100+ sessions.
 
@@ -190,7 +190,7 @@ When "how autonomous should this agent be?" had no clear answer, created a 10-le
 
 **Agentic document management.** SSOT registry (20+ docs) with cascade dependencies. 9-gate quality validation improved doc scores from 45→88/100 with 36/36 gate passes.
 
-**60-point workflow audit framework.** Two-phase scoring (JSON analysis + runtime verification) across 13 categories. Applied to all 14 workflows.
+**60-point workflow audit framework.** Two-phase scoring (JSON analysis + runtime verification) across 13 categories. Applied to all 33 workflows.
 
 **10 research-backed best practices.** Cross-validated from 10+ external sources (Anthropic docs, MCP spec, Microsoft LLMLingua, Mem0). Knowledge architecture optimizations: 67% token reduction, projected 83+ hours annual savings.
 
@@ -227,7 +227,7 @@ When "how autonomous should this agent be?" had no clear answer, created a 10-le
 | Category | Tools |
 |----------|-------|
 | **AI** | Claude (Anthropic), Model Context Protocol (MCP) |
-| **Automation** | n8n (14 production workflows) |
+| **Automation** | n8n (33 production workflows) |
 | **Database** | Supabase (PostgreSQL + pgvector), Row-Level Security |
 | **Search** | sentence-transformers (all-MiniLM-L6-v2), HuggingFace API |
 | **Infrastructure** | GitHub Pages, Google Drive, Cloudflare |
