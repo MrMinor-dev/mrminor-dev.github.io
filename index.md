@@ -72,7 +72,7 @@ Built a 4-layer continuity system: session-context.md (living status document up
 
 ---
 
-### Semantic Search — Building Retrieval Infrastructure
+### [Semantic Search](https://github.com/MrMinor-dev/semantic-search-framework) — Building Retrieval Infrastructure
 
 Built a pipeline to parse, chunk, and embed 373 AI conversations (1.2M words, 224MB) into 14,335 searchable vectors. Combined with 3,093 document chunks = 17,428 total. Architecture: sentence-transformers for embeddings, Supabase pgvector for storage, n8n webhook for cloud retrieval.
 
