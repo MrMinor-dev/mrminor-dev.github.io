@@ -44,7 +44,7 @@ Trust calibration quantifies drift: >95% approval rate with <5% challenge rate t
 
 ---
 
-### Database Security — RLS, Whitelisting, and Least-Privilege Enforcement
+### [Database Security — RLS, Whitelisting, and Least-Privilege Enforcement](https://github.com/MrMinor-dev/database-security-framework)
 
 Evolved a production PostgreSQL schema through 14 versions (v1 → v7.14, 50+ tables) with zero data loss. Enforced additive-only migrations, namespace conventions, and a mandatory 7-step change checklist before every modification.
 
