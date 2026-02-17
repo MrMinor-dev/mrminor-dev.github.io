@@ -1,361 +1,237 @@
 ---
 layout: default
-title: AI Systems & Automation Engineering
+title: Jordan Waxman | AI Systems & Operations
 ---
 
-Production AI orchestration frameworks for autonomous business operations.
+# Jordan Waxman
 
----
+**14 years operations leadership + 350 sessions building human-AI infrastructure**
 
-## About
+I spent 5 months building HAIOS — a Human-AI Operating System where AI operates as COO with defined authority boundaries, and the human stays CEO. Building that required solving real security and governance problems: what an autonomous AI agent is forbidden to do, how to enforce those boundaries in production, how to evolve a database schema 14 times without losing data, and how to maintain operational continuity when your COO has amnesia every session.
 
-AI-native systems that transform session-based AI into autonomous business operations. This portfolio showcases production-tested frameworks demonstrating practical applications of AI orchestration, document automation, semantic search, and operational excellence.
-
-**Focus Areas:**
-- AI Session Orchestration & Context Management
-- Semantic Search & Vector Databases
-- MCP (Model Context Protocol) Server Integration
-- Autonomous Decision Systems
-- Document Automation & Intelligence
-- Security & Compliance Frameworks
+The hardest problems in AI security aren't purely technical — they're governance problems. What should an autonomous system be allowed to do? How do you enforce boundaries without killing capability? How do you scale security controls when the system is growing faster than your ability to audit it? I've spent 350 sessions answering those questions in production. Every number on this page comes from that work.
 
 ---
 
-## Production AI Frameworks
+## What I Built
 
-These frameworks are extracted from real business operations, sanitized for public sharing. They manage actual operational workflows with measurable results.
-
-### 🔍 [Semantic Search Framework](https://github.com/MrMinor-dev/semantic-search-framework)
-
-**The Challenge:** AI assistants waste 40-50k tokens loading unnecessary context, manually browsing files takes 5-10 minutes, and token limits cause 15% session failures.
-
-**The Solution:** 4-layer architecture (Raw Markdown → Processed Chunks → Vector Embeddings → Semantic Search Interface) using local embeddings for zero-cost, sub-second semantic search.
-
-**Key Innovations:**
-- Section-based chunking with 20% overlap (preserves document context)
-- Local embeddings (all-MiniLM-L6-v2) - zero API costs, privacy-first
-- ChromaDB vector database with HNSW indexing
-- Incremental updates (13-130x faster than full reindex)
-- Model Context Protocol (MCP) integration for AI assistant access
-
-**Production Results (30 sessions measured):**
-- 70-90% token efficiency improvement (15k vs 45k context loading)
-- Sub-second search performance (180ms median, <500ms 99th percentile)
-- 98% session completion rate (vs 85% baseline)
-- 30+ work hours saved per month  
-- $0 monthly cost (vs $50+ for cloud alternatives)
-- 1.14 million tokens saved monthly
-
-**Tech Stack:** ChromaDB, sentence-transformers, Model Context Protocol, Python 3.12
-
-**[View Full Documentation →](https://github.com/MrMinor-dev/semantic-search-framework)**
+| Layer | What | Scale |
+|-------|------|-------|
+| **Security governance** | 5-tier authority system with 18 immutable laws and forbidden-action enforcement | 350+ sessions governed |
+| **Access controls** | RLS on all tables, statement-type whitelisting, column-level write permissions | 8 security errors found and fixed via audit |
+| **Infrastructure** | 17-service platform across 7 operational domains with contract-based interfaces | 3 business units consuming shared services |
+| **Database** | PostgreSQL schema evolved v1 → v7.14, 50+ tables, zero data loss | 14 additive-only migrations with 7-step checklist |
+| **Defense-in-depth** | 4-layer deployment protection: validation → health checks → auto-rollback → cooldown | Zero customer-visible outages |
+| **Search infrastructure** | 17,428 embedded chunks with sub-second retrieval and hash-based change detection | Incremental updates <10s vs 5+ min full rebuilds |
+| **Automation** | 14 production workflows with 60-point audit framework across 13 categories | Systematic debugging: 4 documented failure patterns |
+| **Compliance** | Prohibited content enforcement with severity tiers, FTC/Amazon ToS mapping | Autonomous audit capability |
+| **Continuity** | 4-layer state management for session-based AI with no persistent memory | Zero unexpected cutoffs in 200+ sessions |
+| **Skills framework** | 8 versioned capability modules with standardized contracts | Consistent autonomous execution across 100+ sessions |
 
 ---
 
-### 🔧 [MCP Server Installation Framework](https://github.com/MrMinor-dev/mcp-server-installation-framework)
+## Deep Dives
 
-**The Challenge:** MCP (Model Context Protocol) server installation plagued by JSON parsing errors, inconsistent configurations, and platform-specific issues causing 100% failure rate for new implementations.
+### Security Governance — Authority Tiers for Autonomous AI
 
-**The Solution:** 4-phase installation methodology with decision trees for server selection, platform-specific troubleshooting guides, and automated validation protocols.
+Created a 5-tier authority system (Forbidden → Human-Only → Approval Required → Inform After → Autonomous) codified in a CEO-COO contract with 18 immutable laws across 4 categories: Governance, Safety, Operational, Quality.
 
-**Key Innovations:**
-- Systematic troubleshooting decision trees (JSON parsing, import errors, path issues)
-- Platform-specific configuration templates (Windows/Mac/Linux)
-- Pre-flight validation checklist (Python version, dependencies, paths)
-- n8n MCP case study: 100% failure → production in 2 hours
+Forbidden actions: banking access, delete production data, bypass compliance. Escalation rules shift decisions upward when external visibility or money is involved. Default under uncertainty: higher tier. The AI COO operates with $0 spending authority — all influence through process design, trust calibration, and proactive recommendation, driving 80%+ routine decision reduction.
 
-**Production Results:**
-- 12x faster setup (60 seconds vs 10+ minutes trial-and-error)
-- 100% error reduction (systematic troubleshooting eliminates guesswork)
-- 3 platforms supported with proven configurations (Windows/Mac/Linux)
-- Reusable framework for any MCP server implementation
+Trust calibration quantifies drift: >95% approval rate with <5% challenge rate triggers a review alert. Autonomy expands or contracts based on demonstrated competence, not assumptions.
 
-**Tech Stack:** Model Context Protocol SDK, Python 3.8+, Node.js, platform-specific tooling
-
-**[View Full Documentation →](https://github.com/MrMinor-dev/mcp-server-installation-framework)**
+**Why it matters:** Prohibited action lists = usage policies. Tiered authority = access control levels. Escalation rules = incident response procedures. "Default to higher tier under uncertainty" = safety-first posture. Defining what a system *cannot* do is as important as defining what it can.
 
 ---
 
-### 📊 [Semantic Search Transformation Project](https://github.com/MrMinor-dev/semantic-search-transformation)
+### Database Security — RLS, Whitelisting, and Least-Privilege Enforcement
 
-**The Challenge:** 84 business documents optimized for human reading failed AI retrieval systems. Generic headings, zero context repetition, and broken cross-references made autonomous operation impossible during owner's 3-4 month vacations.
+Evolved a production PostgreSQL schema through 14 versions (v1 → v7.14, 50+ tables) with zero data loss. Enforced additive-only migrations, namespace conventions, and a mandatory 7-step change checklist before every modification.
 
-**The Solution:** Systematic 5-tier document transformation using RAG-specific quality frameworks, batch processing methodology, and perpetual optimization system achieving 100% document coverage with zero rework.
+Security audit surfaced 8 actual errors: 5 tables missing Row-Level Security, 3 SECURITY DEFINER views. Generated and executed fix scripts. Built two safe database access services: Safe SQL Query (read-only, blocks 7 statement types) and Safe Database Write (table/column whitelist, per-table INSERT permissions, DELETE restricted to 3 tables with WHERE clause requirement, 50-row output limits).
 
-**Key Innovations:**
-- 5-tier classification system (criticality-based optimization levels)
-- 100-point quality scoring with 9 mandatory gates per document
-- Batch processing engine (64 documents in one session, 87.5% time savings)
-- 5 reusable frameworks for enterprise-scale RAG optimization
-- Perpetual maintenance system preventing quality degradation
-
-**Production Results (10 sessions, 84 documents):**
-- 100% RAG optimization (84/84 documents, 8,943 semantic chunks)
-- Zero rework (756 quality gate validations, 100% first-pass success)
-- +25-52 point quality improvements per document tier
-- Level 10 autonomy achieved (4-month vacation capability)
-- $40,000 revenue protection, 13:1 ROI ($3k project cost)
-
-**Business Impact:**
-- Enabled 120-day owner absence with autonomous operations
-- Regulatory compliance maintained without human oversight
-- Revenue continuity for $10k+ monthly business
-- 5 frameworks created as reusable intellectual property
-
-**Tech Stack:** Claude Code (Python), ChromaDB, sentence-transformers, Git, systematic quality engineering
-
-**[View Full Documentation →](https://github.com/MrMinor-dev/semantic-search-transformation)**
+**Why it matters:** Least-privilege access control for autonomous agents. The question isn't whether AI should access the database — it's which tables, which columns, which operations, with what constraints. Same pattern as securing any infrastructure access at scale.
 
 ---
 
-### 🤖 [AI Session Orchestration Framework](https://github.com/MrMinor-dev/ai-session-orchestration)
+### Defense-in-Depth for Automated Deployments
 
-**The Challenge:** Session-based AI (like Claude or GPT-4) has no memory between conversations, making continuous business operations impossible with traditional approaches.
+Designed 4-layer deployment protection: pre-deploy validation → post-deploy health checks → automatic rollback (Cloudflare) → cooldown logic. Health status enum (healthy → degraded → failed) with rollback triggers at each layer. Cooldown logic prevents cascading failures. Zero customer-visible outages.
 
-**The Solution:** Three-layer architecture combining true automation (runs 24/7 without AI), document-based state persistence (context across sessions), and progressive autonomy (AI makes increasingly complex decisions).
-
-**Key Innovations:**
-- Progressive autonomy model (Level 1 → 5 decision authority)
-- Context restoration in <5 minutes between sessions
-- Zero context loss through incremental state updates
-- Hybrid markdown + XML enabling machine-readable business rules
-
-**Production Metrics (3 months):**
-- 80% time reduction: 3.5 hours/day → 40 minutes/day
-- 87% Level 1 autonomy (AI executes without asking)
-- 82% Level 2 acceptance (proposals approved first time)
-- 99.9% uptime with 24/7 operations
-- 225x ROI on AI subscription cost
-
-**Tech Stack:** Claude API, n8n, Python, markdown, XML, Google Drive
-
-**[View Full Documentation →](https://github.com/MrMinor-dev/ai-session-orchestration)**
+**Why it matters:** Layered security controls where each layer catches what the previous missed. Pre-deploy = preventive controls. Health checks = detective controls. Rollback = corrective controls. Cooldown = circuit breakers. Classic defense-in-depth.
 
 ---
 
-### 📚 [Document Autonomy System](https://github.com/MrMinor-dev/document-autonomy-system)
+### Session Continuity — State Management for Amnesic AI
 
-**The Challenge:** Documentation that enables both human understanding and AI automation without requiring two separate systems.
+After a mid-session resource exhaustion incident (AI said "plenty left" then hit the limit), conducted formal incident analysis. Root cause: zero visibility into token consumption for either party. Auto-loaded 51k tokens without budget check.
 
-**The Solution:** Hybrid format combining markdown (human-readable narrative) with XML (machine-queryable data structures) in a single document.
+Built a 4-layer continuity system: session-context.md (living status document updated 350+ times), startup/end protocols, semantic search over 17,428 chunks, and proactive token management (25k checkpoints, budget estimation, 75% warnings). Zero unexpected cutoffs in 200+ subsequent sessions.
 
-**Key Innovations:**
-- Decision matrices with programmatic thresholds
-- Risk assessment scoring with trigger conditions
-- Escalation protocols tied to specific events
-- Bidirectional cross-references between documents
-- Progressive complexity (start simple, add XML as needed)
-
-**Production Results:**
-- 91% document coverage with autonomy rules
-- 100% compliance validation via XML
-- 86% time reduction on decision-making
-- Zero ambiguity on edge cases
-
-**Tech Stack:** Markdown, XML, Python validation scripts, Git version control
-
-**[View Full Documentation →](https://github.com/MrMinor-dev/document-autonomy-system)**
+**Why it matters:** Incident response applied to AI systems — detect → analyze root cause → remediate → prevent recurrence. The incident revealed an observability gap: neither human nor AI knew the resource state. If you can't see it, you can't secure it.
 
 ---
 
-### 📁 [Automated File Management](https://github.com/MrMinor-dev/automated-file-management)
+### Semantic Search — Building Retrieval Infrastructure
 
-**The Challenge:** Maintaining consistent file operations across cloud storage with zero errors, automatic indexing, and intelligent cross-referencing.
+Built a pipeline to parse, chunk, and embed 373 AI conversations (1.2M words, 224MB) into 14,335 searchable vectors. Combined with 3,093 document chunks = 17,428 total. Architecture: sentence-transformers for embeddings, Supabase pgvector for storage, n8n webhook for cloud retrieval.
 
-**The Solution:** Automated protocols that validate every file operation, maintain searchable indexes, and enforce naming conventions.
+Hash-based incremental updates run in <10 seconds vs. 5+ minutes for full rebuilds. Used this infrastructure to mine my own conversation history — running 50 semantic queries across 485 chunks to produce a verified accomplishment inventory.
 
-**Key Innovations:**
-- Auto-updating file index on every create/move/delete operation
-- Kebab-case naming convention enforcement
-- Cross-platform path validation (Windows/Mac/Linux)
-- Bidirectional document cross-references
-- Automated reference repair on file moves
-
-**Production Results:**
-- Zero file loss incidents across 1,000+ operations
-- 100% naming convention compliance
-- <5 seconds to locate any file via index search
-- 100% cross-reference integrity maintained
-
-**Tech Stack:** Python, Git, filesystem APIs, cloud storage integration
-
-**[View Full Documentation →](https://github.com/MrMinor-dev/automated-file-management)**
+**Why it matters:** Security observability at scale requires searchable, indexed data. This pipeline demonstrates: data ingestion → normalization → indexing → retrieval — the same architecture pattern behind security log analysis, threat detection, and audit trail search.
 
 ---
 
-### ✅ [Quality Assurance Framework](https://github.com/MrMinor-dev/quality-assurance-framework)
+### L1-L10 Autonomy Taxonomy — Framework for Ambiguous Domains
 
-**The Challenge:** Preventing errors in AI-generated content and automated workflows while maintaining high velocity.
+When "how autonomous should this agent be?" had no clear answer, created a 10-level taxonomy across 4 capability tiers: Manual (L1-3), Supervised (L4-6), Autonomous + Monitoring (L7-9), Full Autonomy (L10). 14 agents tagged with three-part convention: current level, status, target.
 
-**The Solution:** 8-step pre-flight validation system with content scoring, automated compliance checking, and error pattern detection.
+"Vacation-ready" defined as L8+ (4-week unattended operation). Key insight: individual agents don't need L10 — they just need to not block the critical path. Explicit upgrade paths per level: L5→L6 = add retry logic; L6→L7 = add monitoring; L7→L8 = self-healing.
 
-**Key Innovations:**
-- Multi-tier audit schedules (daily/weekly/monthly/quarterly)
-- Content quality scoring algorithm (25 points × 4 categories)
-- Automated FTC/platform policy compliance checks
-- Error pattern detection and root cause analysis
-- Zero-tolerance for critical compliance issues
-
-**Production Results:**
-- 0 compliance violations in 3 months
-- 95%+ average content quality scores
-- 90% error prevention rate (caught before publication)
-- 150+ pieces validated with 100% compliance
-
-**Tech Stack:** n8n workflows, Claude API, Python validation scripts
-
-**[View Full Documentation →](https://github.com/MrMinor-dev/quality-assurance-framework)**
+**Why it matters:** Maturity models for emerging domains. When there's no established framework, you build one — defining what "ready" means at each capability level, with clear criteria for progressing to the next.
 
 ---
 
-### 🔒 [AI Security & Compliance Framework](https://github.com/MrMinor-dev/ai-security-compliance-framework)
+## Full Portfolio
 
-**The Challenge:** AI systems vulnerable to prompt injection attacks, unauthorized commands, and compliance violations.
+### Cross-Functional Program Execution
 
-**The Solution:** Three-layer defense system with source validation, hard boundaries, and automated compliance checking.
+**17-service agentic operating system.** Architected a service-oriented platform across 7 operational domains (Content, Finance, Compliance, Learning, Infrastructure, Database, Website) with contract-based interfaces and a consumer matrix tracking which business units use which services.
 
-**Key Innovations:**
-- Command authority hierarchy (only authenticated chat has authority)
-- Prompt injection pattern detection and blocking
-- Hard boundaries on dangerous operations (never actions)
-- High-risk action verification protocols
-- Automated FTC and platform policy validation
+**14 production automation workflows.** Built, tested, and maintained 14 n8n workflows with a 60-point audit framework across 13 validation categories. Systematic debugging methodology identified 4 common failure patterns (type mismatches, merge node misconfiguration, Postgres parameterization errors, credential stripping).
 
-**Production Results:**
-- 0 security incidents in 3 months
-- 100% prompt injection attempts blocked
-- 0 compliance violations detected
-- 100% unauthorized command attempts refused
-
-**Tech Stack:** Python security validation, pattern matching, compliance automation
-
-**[View Full Documentation →](https://github.com/MrMinor-dev/ai-security-compliance-framework)**
+**Multi-agent coordination architecture.** Designed coordination topologies (hierarchical, peer-to-peer), state sharing approaches, and standardized handoff contracts across 8 production skills. Research incorporated patterns from AWS Agent Squad, claude-flow, and 108-agent frameworks.
 
 ---
 
-### 🔄 [Data Pipeline & Continuous Improvement](https://github.com/MrMinor-dev/data-pipeline-continuous-improvement)
+### Systems & Engineering-Level Technical Depth
 
-**The Challenge:** AI without memory repeats mistakes and fails to recognize patterns across sessions.
+**Schema evolution v1 → v7.14.** 50+ tables, 4 namespaces, zero data loss across 14 version increments. Mandatory 7-step change checklist enforced.
 
-**The Solution:** Systematic learning system that captures patterns, extracts business intelligence, and optimizes workflows automatically.
+**Custom semantic search server.** 17,428 embedded chunks, sub-second retrieval, hash-based incremental updates (<10s vs 5+ min rebuilds). Migrated from ChromaDB local to Supabase pgvector.
 
-**Key Innovations:**
-- Pattern recognition from recurring situations
-- Business intelligence extraction from operational data
-- Self-improving workflows based on learned patterns
-- Failure prevention through systematic documentation
-- Dynamic threshold adjustment based on historical data
+**Defense-in-depth deployments.** 4-layer protection with health status enums, rollback triggers, and cooldown logic. Zero customer-visible outages.
 
-**Production Results:**
-- 150+ patterns identified and documented
-- 47 automated process optimizations
-- 0 repeated failures (100% prevention effectiveness)
-- 90%+ pattern application accuracy
+**Safe database access services.** Read-only enforcement (7 blocked statement types), per-table column whitelisting for writes, 50-row output limits.
 
-**Tech Stack:** Python pattern analysis, data extraction, workflow optimization
+**Bi-directional Slack integration.** Outbound alerts + inbound command processing with bot-loop prevention, message classification, and database logging.
 
-**[View Full Documentation →](https://github.com/MrMinor-dev/data-pipeline-continuous-improvement)**
+---
+
+### LLM Automation & Novel Solutions
+
+**Human-AI Operating System (HAIOS).** 350+ sessions, 17 services, 8 skills, 14 workflows, 17,428 embedded chunks, 50+ tables, 50,000+ words of documentation.
+
+**Skills framework.** 8 versioned capability modules with standardized contracts (trigger/inputs/workflow/outputs/error handling). Consistent execution across 100+ sessions.
+
+**Session continuity system.** 4-layer state management solving AI's memory limitation. Zero unexpected cutoffs in 200+ sessions after protocol implementation.
+
+**Conversation embedding pipeline.** 373 conversations parsed, 1.2M words processed, 14,335 conversation chunks embedded.
+
+**Cloud semantic search workflow.** HuggingFace embeddings + Supabase pgvector, webhook-triggered. Debugged API migration and webhook configuration conflicts.
+
+---
+
+### SQL & Data-Driven Reporting
+
+**Financial tracking system.** 3 automated workflows (budget monitoring, expense tracking, revenue import) scoring 54-60/60 on audit. IRS tax category mapping, 50/30/20 allocation enforcement, automated threshold alerts.
+
+**Schema documentation as living SSOT.** 50+ tables documented with column-level detail, constraints, indexes, reader/writer annotations. v7.14 current.
+
+**Framework-level input routing debugging.** Root-caused intermittent query failures to payload differences between MCP and webhook invocation paths. Implemented defensive type-checking across 3 utility workflows.
+
+---
+
+### Cybersecurity & Compliance
+
+**Compliance enforcement system.** Two-tier design: prohibited categories (FTC Act Section 5, 16 CFR Part 255 mapped) and keyword matching with block/flag severity levels. Risk profile: $16k-$43k+ fines per violation.
+
+**5-tier authority system.** 18 immutable laws, forbidden-action enforcement, escalation rules. Practical AI safety: defining prohibited behaviors, enforcing boundaries, defaulting to caution.
+
+**Row-Level Security audit.** Surfaced 8 errors (5 tables missing RLS, 3 SECURITY DEFINER views). Column-level write whitelisting for least-privilege autonomous operations.
+
+**Verification philosophy.** "Ran ≠ Verified" — 3-step protocol (READ → RUN → TEST) codified as immutable law. Applied across 350+ sessions.
+
+---
+
+### Complex Program Management Under Ambiguity
+
+**Strategic pivot under deadline.** After 337 sessions on a $0-revenue business, executed evidence-based pivot to portfolio extraction. New priority hierarchy with March 2026 deadline driving sequencing.
+
+**L1-L10 autonomy taxonomy.** 10 levels, 4 capability tiers, three-tag tracking convention, explicit upgrade paths. 14 agents tagged. "Vacation-ready" = L8+.
+
+**Token management protocol.** Formal incident analysis → proactive management. Zero recurrence in 200+ sessions.
+
+**Deadline-driven operations.** Multi-phase implementation (4 phases, 17+ items each) with deferred items and explicit trigger conditions for reactivation.
+
+---
+
+### Influence Without Authority
+
+**CEO-COO governance contract.** $0 spending authority. 80%+ decision reduction through process design and constraint-based autonomy. Effective governance enables autonomy rather than restricting it.
+
+**Trust calibration model.** Quantified drift detection (approval rate, challenge rate, review time thresholds). Data-driven autonomy expansion with safety guarantees.
+
+---
+
+### Stakeholder Communication & Reporting
+
+**Living status document.** Updated 350+ times. Zero-ramp-up session starts. Structured flag system for urgent items.
+
+**Journey capture system.** Organizational learning document capturing decisions, trade-offs, and failure patterns. Transparent documentation of system bugs.
+
+**Structured handoff contracts.** Standardized schema (action/files/state/errors/next) across 8 production skills. Prevents context loss between operational phases.
+
+---
+
+### Building Program Structure for Emerging Domains
+
+**Self-bootstrapping skill creation.** skill-creator-skill (v2.3) builds new skills to standard with validation rules: token budgets, trigger uniqueness checks, structure requirements.
+
+**Agentic document management.** SSOT registry (20+ docs) with cascade dependencies. 9-gate quality validation improved doc scores from 45→88/100 with 36/36 gate passes.
+
+**60-point workflow audit framework.** Two-phase scoring (JSON analysis + runtime verification) across 13 categories. Applied to all 14 workflows.
+
+**10 research-backed best practices.** Cross-validated from 10+ external sources (Anthropic docs, MCP spec, Microsoft LLMLingua, Mem0). Knowledge architecture optimizations: 67% token reduction, projected 83+ hours annual savings.
+
+---
+
+## Career Foundation
+
+**Amazon** — Global Security Operations. Compliance programs, cross-functional coordination, policy enforcement at scale.
+
+**Flexport** — Freight technology operations. Systems integration, partner management, operational process design.
+
+**Pasha** — Logistics operations leadership. Program management, stakeholder communication, deadline-driven execution.
+
+**MRMINOR LLC** — Founded and operate. Built the entire HAIOS/AOS infrastructure documented on this page.
+
+14 years of operations → the pattern recognition that makes this AI work possible. Compliance programs, security policies, cross-functional coordination, and program management under ambiguity aren't new to me. Applying them to autonomous AI systems is.
+
+---
+
+## Documented Failures
+
+**Token exhaustion incident.** AI blew through context limits mid-session, lost work. Root cause: zero visibility into token consumption for either party. Auto-loaded 51k tokens without budget check. Fix: proactive management protocol with checkpoints. Zero recurrence in 200+ sessions.
+
+**Journey capture overwrite.** A skill overwrote instead of appending, destroying ~150 sessions of organizational learning history. Content partially recoverable from embeddings. Fix: updated skill logic, documented as anti-pattern ("ambiguous skill instructions default to destructive behavior").
+
+**n8n credential stripping.** Full API workflow updates silently remove credential assignments from all nodes. Discovered through production failure. Fix: mandatory warning before full updates, partial update tooling built.
+
+**Framework-level input routing bug.** Intermittent database query failures traced to MCP and webhook injecting request bodies through different payload structures. Invisible at the application layer — only diagnosable by tracing invocation paths. Fix: defensive type-checking across all utility workflows.
 
 ---
 
 ## Technical Stack
 
-**AI & Automation:**
-- Claude (Anthropic) - AI orchestration and decision-making
-- n8n - Workflow automation and system integration
-- Python - Validation scripts, MCP servers, and monitoring
-- Model Context Protocol (MCP) - AI tool integration
-- API integration patterns
-
-**Data & Search:**
-- ChromaDB - Vector database for semantic search
-- sentence-transformers - Local embedding models
-- Markdown + XML hybrid format
-- Git version control
-- Cloud storage with auto-sync
-- Automated indexing systems
-
-**Infrastructure:**
-- Cloudflare Pages - Static site hosting
-- Supabase (PostgreSQL) - Structured data storage
-- GitHub Actions - CI/CD pipelines
-- 11ty - Static site generation
-
----
-
-## Design Philosophy
-
-**1. Production-First**
-- Systems built for real operations, not demos
-- Patterns designed for enterprise scale
-- Battle-tested through daily use
-
-**2. Documentation-Driven**
-- Human-readable AND machine-queryable
-- Self-documenting systems architecture
-- Clear decision authority at every level
-
-**3. Progressive Autonomy**
-- Start with human-in-the-loop
-- Gradually increase AI decision authority
-- Measurable trust building via acceptance rates
-
-**4. Graceful Failure**
-- Systems work even when AI unavailable
-- Clear escalation protocols with triggers
-- Automated error recovery procedures
-
----
-
-## Framework Performance
-
-**Operational Metrics (3 months production use):**
-
-**Efficiency:**
-- 80% time reduction (3.5 hrs/day → 40 min/day)
-- 99.9% uptime (24/7 operations)
-- <5 minute context restoration
-- 87% autonomous execution rate
-- 70-90% token efficiency improvement (semantic search)
-
-**Quality:**
-- 0 security incidents
-- 0 compliance violations
-- 95%+ quality scores
-- 90% error prevention rate
-- 100% MCP installation success rate
-
-**Intelligence:**
-- 150+ patterns identified
-- 47 automated optimizations
-- 100% failure prevention
-- 100% document RAG coverage (84/84 docs)
-- Sub-second semantic search (<500ms)
-
-**Scalability:**
-- 1,000+ file operations (0 loss)
-- 12 automation workflows
-- 84 documents managed (100% optimized)
-- 225x ROI on AI costs
-- 1.14M tokens saved monthly
-- 8,943 semantic chunks indexed
-
----
-
-## About This Portfolio
-
-These frameworks are extracted from real e-commerce business operations managing:
-
-- Financial tracking and automation (invoice processing, expense tracking)
-- Document management (84 documents with 100% RAG optimization)
-- Semantic search & context management (8,943 indexed chunks)
-- Quality assurance (756+ validations with 100% first-pass success)
-- Security operations (100% attack prevention)
-- MCP server integration (12x setup speedup)
-- Continuous improvement (150+ patterns identified)
-- Autonomous operations (Level 10 autonomy, 4-month vacation capability)
-
-**The Goal:** Demonstrate that session-based AI can manage continuous business operations through intelligent orchestration, progressive autonomy, semantic search optimization, and state persistence.
+| Category | Tools |
+|----------|-------|
+| **AI** | Claude (Anthropic), Model Context Protocol (MCP) |
+| **Automation** | n8n (14 production workflows) |
+| **Database** | Supabase (PostgreSQL + pgvector), Row-Level Security |
+| **Search** | sentence-transformers (all-MiniLM-L6-v2), HuggingFace API |
+| **Infrastructure** | GitHub Pages, Google Drive, Cloudflare |
+| **Languages** | Python, SQL, JavaScript, Markdown |
 
 ---
 
@@ -367,6 +243,4 @@ These frameworks are extracted from real e-commerce business operations managing
 
 ---
 
-**Last Updated:** November 2025
-
-*Production systems managing live business operations. Each framework solves actual operational challenges encountered while building AI-native autonomous systems.*
+*33 accomplishments across 9 domains. Every number verified from production systems.*
