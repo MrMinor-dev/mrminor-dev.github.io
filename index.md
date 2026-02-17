@@ -62,7 +62,7 @@ Designed 4-layer deployment protection: pre-deploy validation → post-deploy he
 
 ---
 
-### Session Continuity — State Management for Amnesic AI
+### [Session Continuity](https://github.com/MrMinor-dev/ai-session-orchestration) — State Management for Amnesic AI
 
 After a mid-session resource exhaustion incident (AI said "plenty left" then hit the limit), conducted formal incident analysis. Root cause: zero visibility into token consumption for either party. Auto-loaded 51k tokens without budget check.
 
