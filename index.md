@@ -82,7 +82,7 @@ Hash-based incremental updates run in <10 seconds vs. 5+ minutes for full rebuil
 
 ---
 
-### L1-L10 Autonomy Taxonomy — Framework for Ambiguous Domains
+### [L1-L10 Autonomy Taxonomy — Framework for Ambiguous Domains](https://github.com/MrMinor-dev/autonomy-taxonomy)
 
 When "how autonomous should this agent be?" had no clear answer, created a 10-level taxonomy across 4 capability tiers: Manual (L1-3), Supervised (L4-6), Autonomous + Monitoring (L7-9), Full Autonomy (L10). 14 agents tagged with three-part convention: current level, status, target.
 
