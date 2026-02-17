@@ -54,7 +54,7 @@ Security audit surfaced 8 actual errors: 5 tables missing Row-Level Security, 3 
 
 ---
 
-### Defense-in-Depth for Automated Deployments
+### [Defense-in-Depth for Automated Deployments](https://github.com/MrMinor-dev/deployment-protection-framework)
 
 Designed 4-layer deployment protection: pre-deploy validation → post-deploy health checks → automatic rollback (Cloudflare) → cooldown logic. Health status enum (healthy → degraded → failed) with rollback triggers at each layer. Cooldown logic prevents cascading failures. Zero customer-visible outages.
 
