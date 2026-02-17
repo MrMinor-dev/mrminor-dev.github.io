@@ -32,7 +32,7 @@ The hardest problems in AI security aren't purely technical — they're governan
 
 ## Deep Dives
 
-### Security Governance — Authority Tiers for Autonomous AI
+### [Security Governance — Authority Tiers for Autonomous AI](https://github.com/MrMinor-dev/ai-security-compliance-framework)
 
 Created a 5-tier authority system (Forbidden → Human-Only → Approval Required → Inform After → Autonomous) codified in a CEO-COO contract with 18 immutable laws across 4 categories: Governance, Safety, Operational, Quality.
 
