@@ -34,19 +34,9 @@ The hardest problems in AI security aren't purely technical — they're governan
 
 ### [Security Governance — Authority Tiers for Autonomous AI](https://github.com/MrMinor-dev/ai-security-compliance-framework)
 
-Created a 5-tier authority system (Forbidden → Human-Only → Approval Required → Inform After → Autonomous) codified in a CEO-COO contract with 18 immutable laws across 4 categories: Governance, Safety, Operational, Quality.
+Created a 5-tier authority system (Forbidden → Human-Only → Approval Required → Inform After → Autonomous) codified in a CEO-COO contract with 18 immutable laws. The AI COO operates with $0 spending authority — all influence through process design, trust calibration, and proactive recommendation. Autonomy expands or contracts based on demonstrated competence, not assumptions. Drift detection is quantified: >95% approval rate with <5% challenge rate triggers a review alert — the human is rubber-stamping, not reviewing.
 
-Forbidden actions: banking access, delete production data, bypass compliance. Escalation rules shift decisions upward when external visibility or money is involved. Default under uncertainty: higher tier. The AI COO operates with $0 spending authority — all influence through process design, trust calibration, and proactive recommendation, driving 80%+ routine decision reduction.
-
-Trust calibration quantifies drift: >95% approval rate with <5% challenge rate triggers a review alert. Autonomy expands or contracts based on demonstrated competence, not assumptions.
-
-The laws are literal. Law G1: "Jordan has absolute override authority — any decision, automation, or process can be stopped, reversed, or modified at any time, for any reason, without justification required." Law S3: "No task is complete until the outcome is confirmed. 'I ran the code' is not verification. 'I confirmed the expected result' is." Law S4: "When errors occur, surface them immediately. Silent failures compound. Visibility enables correction."
-
-Escalation is rule-based, not judgment-based. Tier 3→2 triggers: action affects external visibility, change impacts multiple systems, uncertainty about scope. Tier 2→1 triggers: money involved, external parties see the output, action is hard to reverse. Default under uncertainty: always escalate.
-
-Trust calibration is quantified: `engagement_score = (modifications + questions + rejections) / total_reviews`. Target: >0.15. If the approval rate exceeds 95% and review time drops under 30 seconds, that's a drift alert — the human is rubber-stamping, not reviewing. The system flags it.
-
-**Why it matters:** Prohibited action lists = usage policies. Tiered authority = access control levels. Escalation rules = incident response procedures. "Default to higher tier under uncertainty" = safety-first posture. Defining what a system *cannot* do is as important as defining what it can.
+**Why it matters:** Prohibited action lists = usage policies. Tiered authority = access control levels. Escalation rules = incident response procedures. Defining what a system *cannot* do is as important as defining what it can.
 
 ---
 
