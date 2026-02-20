@@ -27,24 +27,24 @@ Every number on this page comes from that work.
 
 | Layer | What | Scale |
 |-------|------|-------|
-| **Security governance** | 5-tier authority system with 18 immutable laws and forbidden-action enforcement | In production since August 2025 |
-| **Database security** | PostgreSQL schema v1→v7.14, RLS on all tables, statement-type allowlisting, column-level write permissions — 8 security errors found and fixed via audit | 14 additive-only migrations with 7-step checklist |
-| **Defense-in-depth** | 4-layer deployment protection: validation → health checks → auto-rollback → cooldown | 2 workflows, 24 nodes, 6-URL health check, zero customer-visible outages |
-| **Search infrastructure** | 17,428 embedded chunks with sub-second retrieval and hash-based change detection | Incremental updates <10s vs 5+ min full rebuilds |
-| **Compliance** | Prohibited content enforcement with severity tiers, FTC/Amazon ToS mapping — daily Spot Audit verifies enforcement layer is firing, not just content | 10/10 executions passing; isolated service survives workflow changes |
-| **Continuity** | 4-layer state management for session-based AI with no persistent memory | Zero unexpected cutoffs in 350+ sessions |
-| **Skills framework** | 8 versioned capability modules with standardized contracts — name, triggers, workflow, authority tier, error handling, handoff statement | v2.x; each version bump traceable to a production failure |
-| **Email intelligence** | Gmail classification, invoice extraction, automated routing to expenses or review queue | 4 email types, 90%+ auto-processed without intervention |
-| **Knowledge mining** | Semantic mining pipeline over full operational history | 50 queries → 485 results → 33 accomplishments, 205 evidence excerpts |
-| **Autonomy taxonomy** | 10-level maturity model classifying every workflow — L6 ceiling for deterministic flows, explicit upgrade paths for the rest | 14 workflows tagged; 4-month autonomy target anchored to a number |
-| **Knowledge architecture** | Tiered context loading with SSOT rules and cascade dependency tracking — hot/warm/cold tiers each with defined token budgets | 17,428-chunk cold tier; hot context capped at 15-20% of session window |
-| **Continuous learning** | Sunday intelligence pipeline: search trends, competitor signals, performance data → synthesized weekly recommendations | Cross-business pattern sharing via shared schema — new business inherits every lesson production already taught |
-| **Human-AI coordination** | Session-state document, async Slack coordination, drift detection on approval rate | 365 sessions; approval rate monitoring built in as a rubber-stamping signal |
-| **Multi-agent coordination** | Authority tiers and dispatch protocols for parallel CEO+COO+CC+CiC execution | Built governance before any tool could fully run inside it; zero context-loss handoffs since |
-| **Financial operations** | IRS tax category mapping, 50/30/20 budget allocation, 80% threshold alerts — all with $0 AI spending authority | 3 workflows scored 54–60/60 on production audit framework |
-| **Slack integration** | Bi-directional bot: outbound alerts + inbound command parsing, loop detection, message classification, database logging | Two workflows in `#haios-coo` — instructions without opening Claude |
-| **Data pipeline** | Hash-based incremental indexing: 373 conversations, 224MB raw JSON, change detection per chunk | <10s incremental updates vs 5+ min full rebuild; 2.4x index growth ChromaDB → pgvector |
-| **Automation** | 33 production workflows across 7 domains built with Claude + n8n-MCP — 541 nodes, 2,646 template patterns, 60-point audit framework | 4 documented failure patterns; 60/60 top score; 100% error handling coverage |
+| [**Security governance**](#security-governance--authority-tiers-for-autonomous-ai) | 5-tier authority system with 18 immutable laws and forbidden-action enforcement | In production since August 2025 |
+| [**Database security**](#database-security--rls-allowlisting-and-least-privilege-enforcement) | PostgreSQL schema v1→v7.14, RLS on all tables, statement-type allowlisting, column-level write permissions — 8 security errors found and fixed via audit | 14 additive-only migrations with 7-step checklist |
+| [**Defense-in-depth**](#defense-in-depth-for-automated-deployments) | 4-layer deployment protection: validation → health checks → auto-rollback → cooldown | 2 workflows, 24 nodes, 6-URL health check, zero customer-visible outages |
+| [**Compliance**](#compliance-by-design--four-domains-built-into-the-architecture) | Prohibited content enforcement with severity tiers, FTC/Amazon ToS mapping — daily Spot Audit verifies enforcement layer is firing, not just content | 10/10 executions passing; isolated service survives workflow changes |
+| [**Multi-agent coordination**](#multi-agent-coordination--governance-first-parallel-execution) | Authority tiers and dispatch protocols for parallel CEO+COO+CC+CiC execution | Built governance before any tool could fully run inside it; zero context-loss handoffs since |
+| [**Human-AI coordination**](#human-ai-coordination--building-alignment-with-an-amnesic-partner) | Session-state document, async Slack coordination, drift detection on approval rate | 365 sessions; approval rate monitoring built in as a rubber-stamping signal |
+| [**Autonomy taxonomy**](#autonomy--cascading--the-platform-model) | 10-level maturity model classifying every workflow — L6 ceiling for deterministic flows, explicit upgrade paths for the rest | 14 workflows tagged; 4-month autonomy target anchored to a number |
+| [**Continuity**](#session-continuity--state-management-for-amnesic-ai) | 4-layer state management for session-based AI with no persistent memory | Zero unexpected cutoffs in 350+ sessions |
+| [**Skills framework**](#skills-framework--versioned-capability-contracts-for-autonomous-ai) | 8 versioned capability modules with standardized contracts — name, triggers, workflow, authority tier, error handling, handoff statement | v2.x; each version bump traceable to a production failure |
+| [**Knowledge architecture**](#knowledge-architecture--managing-what-an-amnesic-system-knows) | Tiered context loading with SSOT rules and cascade dependency tracking — hot/warm/cold tiers each with defined token budgets | 17,428-chunk cold tier; hot context capped at 15-20% of session window |
+| [**Search infrastructure**](#semantic-search--building-retrieval-infrastructure) | 17,428 embedded chunks with sub-second retrieval and hash-based change detection | Incremental updates <10s vs 5+ min full rebuilds |
+| [**Data pipeline**](#data-pipeline--incremental-indexing-for-production-ai) | Hash-based incremental indexing: 373 conversations, 224MB raw JSON, change detection per chunk | <10s incremental updates vs 5+ min full rebuild; 2.4x index growth ChromaDB → pgvector |
+| [**Knowledge mining**](#knowledge-mining--structured-intelligence-from-operational-history) | Semantic mining pipeline over full operational history | 50 queries → 485 results → 33 accomplishments, 205 evidence excerpts |
+| [**Continuous learning**](#continuous-learning--ops-data-as-compounding-infrastructure) | Sunday intelligence pipeline: search trends, competitor signals, performance data → synthesized weekly recommendations | Cross-business pattern sharing via shared schema — new business inherits every lesson production already taught |
+| [**Automation**](#n8n-development-framework--building-33-production-workflows-with-ai) | 33 production workflows across 7 domains built with Claude + n8n-MCP — 541 nodes, 2,646 template patterns, 60-point audit framework | 4 documented failure patterns; 60/60 top score; 100% error handling coverage |
+| [**Financial operations**](#financial-operations-automation) | IRS tax category mapping, 50/30/20 budget allocation, 80% threshold alerts — all with $0 AI spending authority | 3 workflows scored 54–60/60 on production audit framework |
+| [**Email intelligence**](#email-intelligence--classification-extraction-and-routing) | Gmail classification, invoice extraction, automated routing to expenses or review queue | 4 email types, 90%+ auto-processed without intervention |
+| [**Slack integration**](#bi-directional-slack-integration) | Bi-directional bot: outbound alerts + inbound command parsing, loop detection, message classification, database logging | Two workflows in `#haios-coo` — instructions without opening Claude |
 
 ---
 
@@ -60,33 +60,43 @@ The hardest part wasn't defining the tiers. It was detecting when I stopped actu
 
 ---
 
-### [Autonomy + Cascading — The Platform Model](https://github.com/MrMinor-dev/autonomy-taxonomy)
+### [Database Security — RLS, Allowlisting, and Least-Privilege Enforcement](https://github.com/MrMinor-dev/database-security-framework)
 
-Not every workflow needs to be AI-driven. Some run better as pure n8n automation — deterministic, no intelligence required, right at L6 by design. The taxonomy's job isn't to push everything toward L10. It's to give every workflow a position on the maturity curve, a ceiling if it's already at the right level, and an explicit upgrade path if it's not.
+I ran a security audit on a system I'd been building for months and found 8 actual errors. 5 tables with no Row-Level Security at all. 3 views running with creator privileges instead of caller privileges. The system looked secure from every design document. It wasn't.
 
-14 workflows tagged. The 4-month vacation wasn't the fear of what would break — it was the definition of "done." L8 meant the system could get there. The taxonomy made that answerable instead of aspirational.
+From there I built two services that control exactly what the AI can touch. Read queries block 7 statement types at the string-parsing layer — if the query contains DELETE, it never reaches the database. Writes go through a per-table, per-column allowlist — the agent can update product content but can't touch `id`, `created_at`, or `compliance_status`. The intermittent failures that took longest to diagnose weren't in the SQL or the application logic. They were in the invisible difference between how two frameworks inject the same request. Same workflow, two different payload structures depending on how you called it. Fix is one line of defensive type-checking, now in all 3 utility workflows.
 
----
-
-### [Knowledge Architecture — Managing What an Amnesic System Knows](https://github.com/MrMinor-dev/knowledge-architecture-framework)
-
-The AI forgets everything overnight. Every session starts from zero. The naive fix is to dump everything into context at the start — all the docs, all the history, all the state. That doesn't scale. At 100k tokens you're out of space before you've done anything useful.
-
-So I built a tiered knowledge system. Three tiers, each with different loading behavior and a defined token budget. Hot context loads at session start — capped at 15-20% of the window. Warm context loads on task detection. Cold context is 17,428 embedded chunks retrieved on demand in under a second.
-
-The harder problem was keeping it consistent. The rule: one source of truth per topic, one location, cascade dependencies documented. Change the embedding model and six things need to update — the schema doc, the script, the skill, the search baseline, and two downstream workflows. The cascade rule makes that automatic. Without it, you get drift.
-
-**Why it matters:** Any large-scale system has a knowledge management problem. SSOT discipline, cascade rules, and tiered retrieval are the same patterns behind configuration management, runbook maintenance, and incident playbook design. The difference is that here, if the knowledge is stale, the agent acts on it immediately.
+**Why it matters:** Least-privilege access control for autonomous agents. The question isn't whether AI should access the database — it's which tables, which columns, which operations, with what constraints. Same pattern as securing any infrastructure access at scale.
 
 ---
 
-### [Continuous Learning — Ops Data as Compounding Infrastructure](https://github.com/MrMinor-dev/continuous-learning-framework)
+### [Defense-in-Depth for Automated Deployments](https://github.com/MrMinor-dev/deployment-protection-framework)
 
-Search trends, competitor signals, and performance data flow into a pipeline that generates strategic recommendations by Sunday morning. Every session starts with that intelligence already synthesized. When the first video ships, the loop closes — performance data feeds back in, and the next topic recommendation is different because of it.
+The failure mode I was most worried about wasn't a bad deploy. It was a bad deploy that keeps deploying. Rollback fires, triggers a new deploy, new deploy fails, system loops. So I built four layers where each one catches what the previous missed — validation before it ships, health checks after it lands, automatic rollback when health fails, and cooldown that blocks re-deploy until the recovery window clears.
 
-The harder problem was making learning cross business lines. A pattern discovered in TGT doesn't automatically improve PB. The fix: validated patterns land in a shared table that skills query before execution. A new business inherits every lesson production already taught — not from a doc, from the schema.
+The layer most teams skip is cooldown. Health status is three states — healthy, degraded, failed — stored in one table any workflow can check before it does anything. A content publishing workflow reads that table first. If the site is degraded or failed, it exits. The enum isn't decorative. It's what keeps the system from doing work on a broken foundation.
 
-**Why it matters:** Most systems treat knowledge as a byproduct of work. This treats it as infrastructure. The pipeline exists so the system gets harder to break the same way twice, and faster to stand up the next time.
+**Why it matters:** Layered security controls where each layer catches what the previous missed. Pre-deploy = preventive controls. Health checks = detective controls. Rollback = corrective controls. Cooldown = circuit breakers. Classic defense-in-depth.
+
+---
+
+### [Compliance by Design — Four Domains, Built Into the Architecture](https://github.com/MrMinor-dev/compliance-enforcement-framework)
+
+Most compliance systems are bolted on — rules in a document somewhere, checked when someone remembers. I built it the other way. The compliance layer is a separate service that workflows call, not a step embedded inside them. You can't publish a product without passing the content check. You can't run an operation outside your authority tier without hitting the enforcement layer.
+
+Four domains, each genuinely different: content compliance (Amazon/FTC rules, four severity tiers, zero AI discretion), operational compliance (60-point audit score is the proof the rules actually run), legal compliance (AI tracks deadlines, human executes), tax compliance (automated categorization, human submits). The thing that holds them together: isolated enforcement services survive changes to the systems they govern. Embedded enforcement drifts with them.
+
+**Why it matters:** Compliance programs fail two ways — the rules don't actually run, or nobody can tell if they're running. Both are architectural problems. The patterns here apply to any program with regulatory, legal, or operational compliance requirements.
+
+---
+
+### [Multi-Agent Coordination — Governance-First Parallel Execution](https://github.com/MrMinor-dev/multi-agent-coordination-framework)
+
+One person building and running a business with AI hits the same ceiling: one context window, one thing at a time, everything sequential. The answer is parallel agents — CEO + COO on strategy, Claude Code and Claude in Chrome executing in parallel. But parallel agents without coordination is just multiple things going wrong simultaneously.
+
+I built the authority tiers, forbidden action lists, and dispatch protocols before any tool could fully run inside them. When Claude Code and Claude in Chrome came online, the governance didn't need to change. The tools stepped into roles that were already defined for them. That sequencing is what most teams miss — they build execution first and retrofit governance after something breaks. Context loss between handoffs since building this: zero.
+
+**Why it matters:** Most teams build execution first and bolt on governance after something breaks. Authority boundaries get retrofitted around whatever the tool already did. Building governance first means the tools step into defined roles — not defined roles get retrofitted to whatever the tools did. The handoff contract scales: every new agent type steps in without redesigning the coordination layer.
 
 ---
 
@@ -100,13 +110,43 @@ Drift detection runs on the relationship itself. Approval rate above 95%, challe
 
 ---
 
-### [Multi-Agent Coordination — Governance-First Parallel Execution](https://github.com/MrMinor-dev/multi-agent-coordination-framework)
+### [Autonomy + Cascading — The Platform Model](https://github.com/MrMinor-dev/autonomy-taxonomy)
 
-One person building and running a business with AI hits the same ceiling: one context window, one thing at a time, everything sequential. The answer is parallel agents — CEO + COO on strategy, Claude Code and Claude in Chrome executing in parallel. But parallel agents without coordination is just multiple things going wrong simultaneously.
+Not every workflow needs to be AI-driven. Some run better as pure n8n automation — deterministic, no intelligence required, right at L6 by design. The taxonomy's job isn't to push everything toward L10. It's to give every workflow a position on the maturity curve, a ceiling if it's already at the right level, and an explicit upgrade path if it's not.
 
-I built the authority tiers, forbidden action lists, and dispatch protocols before any tool could fully run inside them. When Claude Code and Claude in Chrome came online, the governance didn't need to change. The tools stepped into roles that were already defined for them. That sequencing is what most teams miss — they build execution first and retrofit governance after something breaks. Context loss between handoffs since building this: zero.
+14 workflows tagged. The 4-month vacation wasn't the fear of what would break — it was the definition of "done." L8 meant the system could get there. The taxonomy made that answerable instead of aspirational.
 
-**Why it matters:** Most teams build execution first and bolt on governance after something breaks. Authority boundaries get retrofitted around whatever the tool already did. Building governance first means the tools step into defined roles — not defined roles get retrofitted to whatever the tools did. The handoff contract scales: every new agent type steps in without redesigning the coordination layer.
+---
+
+### [Session Continuity — State Management for Amnesic AI](https://github.com/MrMinor-dev/session-continuity-framework)
+
+Mid-session, the AI told me there was plenty of context left. A few minutes later it hit the limit and we lost the work. When I dug into it, the session had auto-loaded 51k tokens before I sent the first message — against a 100k limit. Neither of us had any visibility into that. So I built it in: 4-layer continuity system, proactive checkpoints every 25k tokens, a 75% warning that prompts a save. Zero unexpected cutoffs in the 200+ sessions since.
+
+The part that actually makes it work is the structure of the state document. Five sections, each with a defined job — what to focus on next, what's in progress, the last 10 sessions, anything urgent, and the IDs and stats the AI needs to operate. A new session reads that file first and is productive in one message. The structure is the reason, not just the document's existence.
+
+**Why it matters:** Incident response applied to AI systems — detect, find the root cause, fix it, prevent recurrence. The incident revealed an observability gap: neither of us knew the resource state. If you can't see it, you can't secure it.
+
+---
+
+### [Skills Framework — Versioned Capability Contracts for Autonomous AI](https://github.com/MrMinor-dev/skills-framework)
+
+A skill destroyed ~150 sessions of organizational history. The session-end skill was supposed to append to a journey log. It overwrote it instead. Root cause: the skill didn't specify write mode. "Save to file" is ambiguous. The agent made a choice. It was the wrong one.
+
+That failure is why skills are at v2.x. Each version bump is traceable to a specific production failure. The version number is the evidence count. 8 skills in production, each with a standardized contract — name, trigger phrases, workflow, authority tier, error handling, explicit write modes. The contracts are the reason they run consistently: not because the agent remembers, but because the contract is read before execution, every time.
+
+**Why it matters:** Skill contracts for autonomous agents are the same idea as standard operating procedures for distributed teams — except here, if the procedure isn't read before execution, the agent operates from memory, and memory resets overnight. The failure mode for SOPs and skill contracts is the same: an underdefined instruction, a reasonable-seeming default, and no one to ask.
+
+---
+
+### [Knowledge Architecture — Managing What an Amnesic System Knows](https://github.com/MrMinor-dev/knowledge-architecture-framework)
+
+The AI forgets everything overnight. Every session starts from zero. The naive fix is to dump everything into context at the start — all the docs, all the history, all the state. That doesn't scale. At 100k tokens you're out of space before you've done anything useful.
+
+So I built a tiered knowledge system. Three tiers, each with different loading behavior and a defined token budget. Hot context loads at session start — capped at 15-20% of the window. Warm context loads on task detection. Cold context is 17,428 embedded chunks retrieved on demand in under a second.
+
+The harder problem was keeping it consistent. The rule: one source of truth per topic, one location, cascade dependencies documented. Change the embedding model and six things need to update — the schema doc, the script, the skill, the search baseline, and two downstream workflows. The cascade rule makes that automatic. Without it, you get drift.
+
+**Why it matters:** Any large-scale system has a knowledge management problem. SSOT discipline, cascade rules, and tiered retrieval are the same patterns behind configuration management, runbook maintenance, and incident playbook design. The difference is that here, if the knowledge is stale, the agent acts on it immediately.
 
 ---
 
@@ -132,16 +172,6 @@ The harder problem was chunking conversations. Documents have sections. Conversa
 
 ---
 
-### [Compliance by Design — Four Domains, Built Into the Architecture](https://github.com/MrMinor-dev/compliance-enforcement-framework)
-
-Most compliance systems are bolted on — rules in a document somewhere, checked when someone remembers. I built it the other way. The compliance layer is a separate service that workflows call, not a step embedded inside them. You can't publish a product without passing the content check. You can't run an operation outside your authority tier without hitting the enforcement layer.
-
-Four domains, each genuinely different: content compliance (Amazon/FTC rules, four severity tiers, zero AI discretion), operational compliance (60-point audit score is the proof the rules actually run), legal compliance (AI tracks deadlines, human executes), tax compliance (automated categorization, human submits). The thing that holds them together: isolated enforcement services survive changes to the systems they govern. Embedded enforcement drifts with them.
-
-**Why it matters:** Compliance programs fail two ways — the rules don't actually run, or nobody can tell if they're running. Both are architectural problems. The patterns here apply to any program with regulatory, legal, or operational compliance requirements.
-
----
-
 ### [Knowledge Mining — Structured Intelligence from Operational History](https://github.com/MrMinor-dev/knowledge-mining-framework)
 
 373 conversations, 1.2 million words. 50 structured queries designed against a specific target schema — 9 job description categories from a real role. 485 result chunks surfaced, reviewed, distilled into 33 accomplishments backed by 205 evidence excerpts. Not reconstructed from memory. Mined from what actually happened.
@@ -152,43 +182,23 @@ The pipeline is the pattern for any organization trying to extract value from AI
 
 ---
 
-### [Session Continuity — State Management for Amnesic AI](https://github.com/MrMinor-dev/session-continuity-framework)
+### [Continuous Learning — Ops Data as Compounding Infrastructure](https://github.com/MrMinor-dev/continuous-learning-framework)
 
-Mid-session, the AI told me there was plenty of context left. A few minutes later it hit the limit and we lost the work. When I dug into it, the session had auto-loaded 51k tokens before I sent the first message — against a 100k limit. Neither of us had any visibility into that. So I built it in: 4-layer continuity system, proactive checkpoints every 25k tokens, a 75% warning that prompts a save. Zero unexpected cutoffs in the 200+ sessions since.
+Search trends, competitor signals, and performance data flow into a pipeline that generates strategic recommendations by Sunday morning. Every session starts with that intelligence already synthesized. When the first video ships, the loop closes — performance data feeds back in, and the next topic recommendation is different because of it.
 
-The part that actually makes it work is the structure of the state document. Five sections, each with a defined job — what to focus on next, what's in progress, the last 10 sessions, anything urgent, and the IDs and stats the AI needs to operate. A new session reads that file first and is productive in one message. The structure is the reason, not just the document's existence.
+The harder problem was making learning cross business lines. A pattern discovered in TGT doesn't automatically improve PB. The fix: validated patterns land in a shared table that skills query before execution. A new business inherits every lesson production already taught — not from a doc, from the schema.
 
-**Why it matters:** Incident response applied to AI systems — detect, find the root cause, fix it, prevent recurrence. The incident revealed an observability gap: neither of us knew the resource state. If you can't see it, you can't secure it.
-
----
-
-### [Database Security — RLS, Allowlisting, and Least-Privilege Enforcement](https://github.com/MrMinor-dev/database-security-framework)
-
-I ran a security audit on a system I'd been building for months and found 8 actual errors. 5 tables with no Row-Level Security at all. 3 views running with creator privileges instead of caller privileges. The system looked secure from every design document. It wasn't.
-
-From there I built two services that control exactly what the AI can touch. Read queries block 7 statement types at the string-parsing layer — if the query contains DELETE, it never reaches the database. Writes go through a per-table, per-column allowlist — the agent can update product content but can't touch `id`, `created_at`, or `compliance_status`. The intermittent failures that took longest to diagnose weren't in the SQL or the application logic. They were in the invisible difference between how two frameworks inject the same request. Same workflow, two different payload structures depending on how you called it. Fix is one line of defensive type-checking, now in all 3 utility workflows.
-
-**Why it matters:** Least-privilege access control for autonomous agents. The question isn't whether AI should access the database — it's which tables, which columns, which operations, with what constraints. Same pattern as securing any infrastructure access at scale.
+**Why it matters:** Most systems treat knowledge as a byproduct of work. This treats it as infrastructure. The pipeline exists so the system gets harder to break the same way twice, and faster to stand up the next time.
 
 ---
 
-### [Defense-in-Depth for Automated Deployments](https://github.com/MrMinor-dev/deployment-protection-framework)
+### [n8n Development Framework — Building 33 Production Workflows with AI](https://github.com/MrMinor-dev/n8n-development-framework)
 
-The failure mode I was most worried about wasn't a bad deploy. It was a bad deploy that keeps deploying. Rollback fires, triggers a new deploy, new deploy fails, system loops. So I built four layers where each one catches what the previous missed — validation before it ships, health checks after it lands, automatic rollback when health fails, and cooldown that blocks re-deploy until the recovery window clears.
+The first version of every workflow worked. The problem was the tenth, and the one someone added at 11pm to fix something urgent. Credentials get hardcoded. Error handling gets skipped. Logging disappears. At 5 workflows that's manageable. At 33, it's a reliability problem — unless you built the audit framework first.
 
-The layer most teams skip is cooldown. Health status is three states — healthy, degraded, failed — stored in one table any workflow can check before it does anything. A content publishing workflow reads that table first. If the site is degraded or failed, it exits. The enum isn't decorative. It's what keeps the system from doing work on a broken foundation.
+60 points, two phases, 13 categories. Phase 1 runs on the raw JSON — no execution needed. Phase 2 confirms it actually did what it was supposed to: last 10 executions, database writes present, webhook callable. A workflow that silently completes but writes nothing passes Phase 1. It fails Phase 2, Category C. Four failure patterns documented, all fixed, all in the anti-patterns list — including the one where a full API update silently strips credentials from every node with no error.
 
-**Why it matters:** Layered security controls where each layer catches what the previous missed. Pre-deploy = preventive controls. Health checks = detective controls. Rollback = corrective controls. Cooldown = circuit breakers. Classic defense-in-depth.
-
----
-
-### [Skills Framework — Versioned Capability Contracts for Autonomous AI](https://github.com/MrMinor-dev/skills-framework)
-
-A skill destroyed ~150 sessions of organizational history. The session-end skill was supposed to append to a journey log. It overwrote it instead. Root cause: the skill didn't specify write mode. "Save to file" is ambiguous. The agent made a choice. It was the wrong one.
-
-That failure is why skills are at v2.x. Each version bump is traceable to a specific production failure. The version number is the evidence count. 8 skills in production, each with a standardized contract — name, trigger phrases, workflow, authority tier, error handling, explicit write modes. The contracts are the reason they run consistently: not because the agent remembers, but because the contract is read before execution, every time.
-
-**Why it matters:** Skill contracts for autonomous agents are the same idea as standard operating procedures for distributed teams — except here, if the procedure isn't read before execution, the agent operates from memory, and memory resets overnight. The failure mode for SOPs and skill contracts is the same: an underdefined instruction, a reasonable-seeming default, and no one to ask.
+**Why it matters:** Workflow governance at scale is the same problem as release management, change control, and operational runbooks — systematic standards applied consistently, not remembered selectively. The audit framework is what makes 33 workflows maintainable instead of a liability.
 
 ---
 
@@ -202,16 +212,6 @@ That's what made the $0 spending authority non-negotiable. Under $0, errors are 
 
 ---
 
-### [Bi-Directional Slack Integration](https://github.com/MrMinor-dev/slack-integration-framework)
-
-Outbound alerts were straightforward. Inbound was harder — the bot receives its own messages and loops if you don't filter them. Built message classification, command parsing, database logging, and acknowledgment flows. Two workflows running in `#haios-coo`.
-
-The practical result: I can give the AI instructions without opening Claude. It stays in the loop without needing me there. The deeper capability: the AI can alert me when something needs attention, and I can respond without either of us being in the same place at the same time.
-
-**Why it matters:** Human-AI coordination through asynchronous messaging. Message classification and loop detection are the same problems you solve in any multi-system communication layer — except here, one participant forgets everything overnight.
-
----
-
 ### [Email Intelligence — Classification, Extraction, and Routing](https://github.com/MrMinor-dev/email-intelligence-framework)
 
 Every business has the same inbox problem: invoices to log, compliance notices that need immediate attention, vendor updates worth tracking, and noise that should disappear. The default is a human reading every email. This automates the triage and everything that follows.
@@ -222,13 +222,13 @@ Claude reads and classifies each message into one of 9 categories. Rules handle 
 
 ---
 
-### [n8n Development Framework — Building 33 Production Workflows with AI](https://github.com/MrMinor-dev/n8n-development-framework)
+### [Bi-Directional Slack Integration](https://github.com/MrMinor-dev/slack-integration-framework)
 
-The first version of every workflow worked. The problem was the tenth, and the one someone added at 11pm to fix something urgent. Credentials get hardcoded. Error handling gets skipped. Logging disappears. At 5 workflows that's manageable. At 33, it's a reliability problem — unless you built the audit framework first.
+Outbound alerts were straightforward. Inbound was harder — the bot receives its own messages and loops if you don't filter them. Built message classification, command parsing, database logging, and acknowledgment flows. Two workflows running in `#haios-coo`.
 
-60 points, two phases, 13 categories. Phase 1 runs on the raw JSON — no execution needed. Phase 2 confirms it actually did what it was supposed to: last 10 executions, database writes present, webhook callable. A workflow that silently completes but writes nothing passes Phase 1. It fails Phase 2, Category C. Four failure patterns documented, all fixed, all in the anti-patterns list — including the one where a full API update silently strips credentials from every node with no error.
+The practical result: I can give the AI instructions without opening Claude. It stays in the loop without needing me there. The deeper capability: the AI can alert me when something needs attention, and I can respond without either of us being in the same place at the same time.
 
-**Why it matters:** Workflow governance at scale is the same problem as release management, change control, and operational runbooks — systematic standards applied consistently, not remembered selectively. The audit framework is what makes 33 workflows maintainable instead of a liability.
+**Why it matters:** Human-AI coordination through asynchronous messaging. Message classification and loop detection are the same problems you solve in any multi-system communication layer — except here, one participant forgets everything overnight.
 
 ---
 
