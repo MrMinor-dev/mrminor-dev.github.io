@@ -194,9 +194,9 @@ That failure is why skills are at v2.x. Each version bump is traceable to a spec
 
 ### [Financial Operations Automation](https://github.com/MrMinor-dev/financial-operations-framework)
 
-Three workflows: IRS tax category mapping, 50/30/20 budget allocation, automatic alerts at 80% of any category. All three scored between 54 and 60 out of 60 on the same audit framework I built for all 33 production workflows.
+The budget monitor ran cleanly for weeks. The audit found it was broken in the one path that mattered — the alert branch wrote to a table that had been dropped in a prior migration. Perfect under normal conditions. Silent failure the moment spending hit 80%.
 
-The constraint that shaped everything: the AI has $0 spending authority. The line at $0 isn't arbitrary — it's where the risk profile changes. Every financial workflow knows it and stops at the right moment.
+That's what made the $0 spending authority non-negotiable. Under $0, errors are operational. Over $0, errors are financial. The line is where the risk profile changes. Three workflows, all audited to verify the boundary holds — not just that they run.
 
 **Why it matters:** Financial workflow automation with explicit authorization boundaries. The constraint is the design — knowing exactly where human approval is required, and building the system so that boundary is hard to cross accidentally.
 
@@ -214,11 +214,11 @@ The practical result: I can give the AI instructions without opening Claude. It 
 
 ### [Email Intelligence — Classification, Extraction, and Routing](https://github.com/MrMinor-dev/email-intelligence-framework)
 
-Four email types, one classifier, four routing rules. Invoices, compliance notices, product updates, noise — Claude classifies each message, rules handle the rest. Invoice emails get parsed: vendor, amount, date, category extracted, confidence-scored, routed to the expenses table or a human review queue. A Slack acknowledgment closes the loop.
+Every business has the same inbox problem: invoices to log, compliance notices that need immediate attention, vendor updates worth tracking, and noise that should disappear. The default is a human reading every email. This automates the triage and everything that follows.
 
-The classifier doesn't use keywords. It reads the email and makes a judgment. The rules determine what happens next. That separation means adding a new category is one rule addition, not a rewrite of the classifier. 90%+ of invoices process without intervention. The 10% that need a second look are flagged, not silently filed.
+Claude reads and classifies each message into one of 9 categories. Rules handle the routing. Invoices get parsed — vendor, amount, date, IRS category — and written to the expenses table automatically. Slack closes the loop with a daily count. 90%+ processed without intervention.
 
-**Why it matters:** Classify before routing, separate extraction from decision-making, automate preparation while keeping human approval at the right boundary. Same patterns apply anywhere you're processing documents, emails, or records at volume.
+**Why it matters:** Most businesses are one step away from this — Gmail is already connected, the emails are already arriving. The gap is structured extraction and routing logic. Same architecture applies to support tickets, vendor communications, compliance filings.
 
 ---
 
