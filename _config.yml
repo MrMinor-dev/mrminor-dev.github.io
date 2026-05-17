@@ -1,5 +1,6 @@
 theme: minima
-title: AI Systems & Operations
-description: Technical Program Manager | AI/ML Operations | Automation & Systems
+title: Jordan Waxman — AI Automation & Operations
+description: Readiness audits, workflow builds, AI agents, and integration work for SMBs and ops teams.
+url: "https://jordanwaxman.com"
+baseurl: ""
 show_downloads: false
-google_analytics: # Add your GA tracking ID if you want analytics
