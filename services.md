@@ -10,14 +10,19 @@ description: AI readiness assessments, workflow builds, AI agents, back-office a
     <h1>Services</h1>
 
     <p class="page-intro">Most engagements start with a 30-min scoping call. Some buyers know exactly what they need built. Others need to start with an assessment to figure out where AI fits. Either path works.</p>
-    <p class="page-intro">Every engagement runs the same correction loop I run on my own ops: scope before build, verify before ship, monitor what&rsquo;s running.</p>
     <p class="page-intro">Below: every offering with scope, timeline, and current pricing. Productized assessments are fixed-fee. Build pricing is scope-dependent and confirmed at the kickoff call.</p>
 
     <div class="services-cta-block">
       <a href="https://calendar.app.google/mgxB9w3ziGyTGLAw9" class="btn-cta" target="_blank" rel="noopener">Book a scoping call &rarr;</a>
     </div>
 
-    <h2>Diagnose</h2>
+    <nav class="lane-nav">
+      <a href="#diagnose">Diagnose</a>
+      <a href="#build">Build</a>
+      <a href="#operate">Operate</a>
+    </nav>
+
+    <h2 id="diagnose">Diagnose</h2>
     <p class="lane-intro">Written deliverables. Fixed scope, fixed timeline, fixed fee. Output: working doc + debrief call.</p>
 
     <h3 id="ai-readiness-assessment">AI Readiness Assessment</h3>
@@ -89,7 +94,7 @@ description: AI readiness assessments, workflow builds, AI agents, back-office a
       <a href="https://calendar.app.google/mgxB9w3ziGyTGLAw9" class="btn-cta" target="_blank" rel="noopener">Book a scoping call &rarr;</a>
     </div>
 
-    <h2>Build</h2>
+    <h2 id="build">Build</h2>
     <p class="lane-intro">Scoped projects. Fixed deliverable, fixed timeline. Scoping happens inside the build, not as a separate paid step.</p>
 
     <h3 id="workflow-automation-build">Workflow Automation Build</h3>
@@ -174,7 +179,7 @@ description: AI readiness assessments, workflow builds, AI agents, back-office a
       <a href="https://calendar.app.google/mgxB9w3ziGyTGLAw9" class="btn-cta" target="_blank" rel="noopener">Book a scoping call &rarr;</a>
     </div>
 
-    <h2>Operate</h2>
+    <h2 id="operate">Operate</h2>
     <p class="lane-intro">Recurring retainers. Auto-offered after every build. Available standalone.</p>
 
     <h3 id="monitoring-retainer">Monitoring Retainer</h3>

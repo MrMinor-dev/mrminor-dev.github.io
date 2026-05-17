@@ -456,9 +456,34 @@ a:hover { color: var(--accent-hover); }
   font-family: 'DM Sans', sans-serif;
   font-size: 24px;
   font-weight: 600;
-  color: var(--text);
+  color: var(--accent);
   margin-top: 40px;
   margin-bottom: 8px;
+}
+
+/* === Lane Nav (Services page) === */
+.lane-nav {
+  display: flex;
+  gap: 32px;
+  margin: 0 0 48px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.lane-nav a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition: color 150ms;
+}
+
+.lane-nav a:hover {
+  color: var(--accent);
 }
 
 .page-content p {

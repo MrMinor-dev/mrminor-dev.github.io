@@ -6,9 +6,9 @@ description: Readiness audits, workflow builds, AI agents, and integration work 
 
 <section class="hero">
   <div class="container">
-    <h1>You know AI matters for your business. You haven&rsquo;t had time to figure out where it actually fits.</h1>
-    <p class="hero-subhead">Readiness audits, workflow builds, AI agents, integration work. For SMBs and ops teams who want AI that fits how they run. Not another tool to log into.</p>
-    <p class="hero-cred">14 years at Amazon and Flexport making big operations actually work. Now I run my own agency entirely through AI, on the same operating system I&rsquo;d build for you.</p>
+    <h1>You know AI matters for your business. You haven&rsquo;t figured out where it actually fits.</h1>
+    <p class="hero-subhead">Readiness audits, workflow builds, AI agents, integration work. For SMBs and ops teams who want AI that fits how they run.</p>
+    <p class="hero-cred">14 years at Amazon and Flexport making big operations actually work. Now I help clients make AI work for them.</p>
     <a href="https://calendar.app.google/mgxB9w3ziGyTGLAw9" class="btn-primary" target="_blank" rel="noopener">Book a 30-min scoping call &rarr;</a>
   </div>
 </section>
@@ -92,7 +92,7 @@ description: Readiness audits, workflow builds, AI agents, and integration work 
 <section class="how-i-work">
   <div class="container">
     <h2>How I work</h2>
-    <p>Every engagement comes with a written document: findings, ranked gaps, specific next steps. When something breaks, it is traced to the decision that produced it and fixed. Four frameworks I bring into client work:</p>
+    <p>Scope and requirements before build begins. Work ships tested, with documentation your team can use. Regular check-ins throughout. Four frameworks I bring into client work:</p>
     <ul class="story-links">
       <li><a href="https://github.com/MrMinor-dev/security-governance-framework" target="_blank" rel="noopener">Authority boundaries, before the AI touches production</a></li>
       <li><a href="https://github.com/MrMinor-dev/database-security-framework" target="_blank" rel="noopener">Least-privilege access, and the 8 errors the audit found</a></li>

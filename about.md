@@ -23,7 +23,7 @@ description: 14 years making large, complicated things run reliably. Now buildin
 
     <div class="about-section">
       <h2>How I work</h2>
-      <p>Every engagement delivers a written document. Findings, ranked gaps, next steps. When something breaks, it is traced to the decision that produced it and fixed. The four frameworks on the home page are what that looks like in practice.</p>
+      <p>Scope and requirements before build begins. Work ships tested, with supporting documentation. Regular check-ins throughout. The four frameworks on the home page are what that looks like in practice.</p>
     </div>
 
     <div class="about-section">
