@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="/" class="nav-brand">Jordan Waxman</a>
+        <ul class="nav-links">
+          <li><a href="/services" class="nav-link{% if page.url contains '/services' %} active{% endif %}">Services</a></li>
+          <li><a href="/about" class="nav-link{% if page.url contains '/about' %} active{% endif %}">About</a></li>
+          <li><a href="/blog" class="nav-link{% if page.url contains '/blog' %} active{% endif %}">Blog</a></li>
+          <li><a href="https://calendar.app.google/mgxB9w3ziGyTGLAw9" class="btn-nav" target="_blank" rel="noopener">Book a scoping call &rarr;</a></li>
+        </ul>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="nav-mobile-overlay" id="nav-mobile-overlay" aria-hidden="true">
+    <button class="nav-mobile-close" id="nav-mobile-close" aria-label="Close menu">&times;</button>
+    <ul class="nav-mobile-links">
+      <li><a href="/services">Services</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="https://calendar.app.google/mgxB9w3ziGyTGLAw9" class="btn-nav" target="_blank" rel="noopener">Book a scoping call &rarr;</a></li>
+    </ul>
+  </div>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-cta">
+        <h2>Work with Jordan</h2>
+        <a href="https://calendar.app.google/mgxB9w3ziGyTGLAw9" class="btn-primary" target="_blank" rel="noopener">Book a 30-min scoping call &rarr;</a>
+      </div>
+      <hr class="footer-divider">
+      <nav class="footer-nav">
+        <a href="/services">Services</a>
+        <a href="/about">About</a>
+        <a href="/blog">Blog</a>
+        <a href="https://github.com/MrMinor-dev" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <p class="footer-email"><a href="mailto:jordan@jordanwaxman.com">jordan@jordanwaxman.com</a></p>
+      <p class="footer-copy">&copy; MRMINOR LLC, Seattle, WA &middot; jordan@jordanwaxman.com</p>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky nav border on scroll
+    var header = document.getElementById('site-header');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 8) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Hamburger toggle
+    var hamburger = document.getElementById('nav-hamburger');
+    var overlay = document.getElementById('nav-mobile-overlay');
+    var closeBtn = document.getElementById('nav-mobile-close');
+
+    hamburger.addEventListener('click', function() {
+      overlay.classList.add('open');
+      overlay.setAttribute('aria-hidden', 'false');
+      hamburger.setAttribute('aria-expanded', 'true');
+    });
+
+    closeBtn.addEventListener('click', function() {
+      overlay.classList.remove('open');
+      overlay.setAttribute('aria-hidden', 'true');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  </script>
+
+</body>
+</html>
