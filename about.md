@@ -23,7 +23,7 @@ description: 14 years making large, complicated things run reliably. Now buildin
 
     <div class="about-section">
       <h2>How I work</h2>
-      <p>Every engagement runs on the same correction loop I run on my own production systems. When something breaks, we trace it to the decision that produced it, fix the decision, and the symptom takes care of itself. The four stories on the home page are how that pattern plays out in real production work.</p>
+      <p>Every engagement delivers a written document. Findings, ranked gaps, next steps. When something breaks, it is traced to the decision that produced it and fixed. The four frameworks on the home page are what that looks like in practice.</p>
     </div>
 
     <div class="about-section">

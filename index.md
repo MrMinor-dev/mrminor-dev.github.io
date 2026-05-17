@@ -92,7 +92,7 @@ description: Readiness audits, workflow builds, AI agents, and integration work 
 <section class="how-i-work">
   <div class="container">
     <h2>How I work</h2>
-    <p>Every engagement runs on the same correction loop I run on my own production systems. When something breaks, we trace it to the decision that produced it, fix the decision, and the symptom takes care of itself. No papering over. Four production stories:</p>
+    <p>Every engagement comes with a written document: findings, ranked gaps, specific next steps. When something breaks, it is traced to the decision that produced it and fixed. Four frameworks I bring into client work:</p>
     <ul class="story-links">
       <li><a href="https://github.com/MrMinor-dev/security-governance-framework" target="_blank" rel="noopener">Authority boundaries, before the AI touches production</a></li>
       <li><a href="https://github.com/MrMinor-dev/database-security-framework" target="_blank" rel="noopener">Least-privilege access, and the 8 errors the audit found</a></li>
