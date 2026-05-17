@@ -38,7 +38,7 @@ description: AI readiness assessments, workflow builds, AI agents, back-office a
         <li>30-min debrief call walking the assessment together</li>
       </ol>
     </div>
-    <p class="meta-line"><strong>Timeline:</strong> 3&ndash;5 business days. One call in, one call out, written deliverable in between.</p>
+    <p class="meta-line"><strong>Timeline:</strong> 1 week. One call in, one call out, written deliverable in between.</p>
     <p class="meta-line"><strong>Investment:</strong> $500.</p>
 
     <h3 id="ai-operations-audit">AI Operations Audit</h3>
@@ -109,7 +109,7 @@ description: AI readiness assessments, workflow builds, AI agents, back-office a
         <li>30-day post-launch support for environment-related issues</li>
       </ol>
     </div>
-    <p class="meta-line"><strong>Timeline:</strong> 5&ndash;10 business days, depending on integration count.</p>
+    <p class="meta-line"><strong>Timeline:</strong> 1&ndash;2 weeks, depending on integration count.</p>
     <p class="meta-line"><strong>Investment:</strong> $1,500&ndash;$3,000 for one workflow with bounded scope. $3,500&ndash;$7,500 for multi-workflow or complex orchestration. Confirmed at the kickoff call.</p>
 
     <h3 id="ai-agent-build">AI Agent Build</h3>
@@ -125,7 +125,7 @@ description: AI readiness assessments, workflow builds, AI agents, back-office a
         <li>2-week post-launch adjustment window for voice and decision-rule refinement</li>
       </ol>
     </div>
-    <p class="meta-line"><strong>Timeline:</strong> 7&ndash;10 business days.</p>
+    <p class="meta-line"><strong>Timeline:</strong> 1&ndash;2 weeks.</p>
     <p class="meta-line"><strong>Investment:</strong> $2,500&ndash;$5,000 for a single agent. $5,000&ndash;$10,000 for multi-agent orchestration with cross-agent handoff. Confirmed at the kickoff call.</p>
 
     <h3 id="back-office-automation-build">Back-Office Automation Build</h3>
@@ -141,7 +141,7 @@ description: AI readiness assessments, workflow builds, AI agents, back-office a
         <li>30-day post-launch tuning support for exception patterns</li>
       </ol>
     </div>
-    <p class="meta-line"><strong>Timeline:</strong> 7&ndash;14 business days.</p>
+    <p class="meta-line"><strong>Timeline:</strong> 2&ndash;3 weeks.</p>
     <p class="meta-line"><strong>Investment:</strong> $2,500&ndash;$5,000 for one process. $5,000&ndash;$10,000 for multi-process or multi-department work with complex audit-trail. Confirmed at the kickoff call.</p>
 
     <h3 id="ai-integration">AI Integration</h3>

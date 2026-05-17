@@ -45,7 +45,7 @@ description: Readiness audits, workflow builds, AI agents, and integration work 
       <div class="card">
         <p class="card-pain">&ldquo;We have manual processes that should be automated. We don&rsquo;t know where to start.&rdquo;</p>
         <h3>Process Automation Assessment</h3>
-        <p>In 3&ndash;5 days: a written assessment of your top automation opportunities, ranked by impact and feasibility. One call in, async analysis, one call out. No multi-week discovery sprint.</p>
+        <p>In 1 week: a written assessment of your top automation opportunities, ranked by impact and feasibility. One call in, async analysis, one call out. No multi-week discovery sprint.</p>
         <p>If you&rsquo;ve already turned on Claude for Small Business, Copilot, or another pre-built, the assessment tells you what they cover for your case and what needs custom work. If you haven&rsquo;t, it tells you whether one would fit before you spend on tools.</p>
         <p>Next step: a workflow build, AI agent, or back-office automation &mdash; quoted at the debrief call.</p>
         <a href="/services#ai-readiness-assessment" class="card-cta">Book a scoping call &rarr;</a>
@@ -71,7 +71,7 @@ description: Readiness audits, workflow builds, AI agents, and integration work 
       <div class="card">
         <p class="card-pain">&ldquo;One or two workflows are eating my team&rsquo;s week.&rdquo;</p>
         <h3>Workflow Automation Build</h3>
-        <p>In 5&ndash;10 business days: one end-to-end workflow built and deployed on your stack. n8n, Zapier, custom API, whatever you&rsquo;re running. Failure-mode handling so it doesn&rsquo;t break silently. Runbook so your team can operate it without me.</p>
+        <p>In 1&ndash;2 weeks: one end-to-end workflow built and deployed on your stack. n8n, Zapier, custom API, whatever you&rsquo;re running. Failure-mode handling so it doesn&rsquo;t break silently. Runbook so your team can operate it without me.</p>
         <p>If a vendor pre-built handles your case, I&rsquo;ll tell you and you save the money. Most of the time it doesn&rsquo;t &mdash; the workflow sits between systems they don&rsquo;t connect, or runs on logic they don&rsquo;t encode.</p>
         <p>Next step: more workflows, an embedded AI agent, or a monitoring retainer to keep what&rsquo;s running healthy.</p>
         <a href="/services#workflow-automation-build" class="card-cta">Book a scoping call &rarr;</a>
