@@ -4,10 +4,30 @@ layout: default
 
 <div class="page-content">
   <div class="container">
-    <h1>{{ page.title }}</h1>
-    <p class="offering-tagline">{{ page.date | date: "%B %-d, %Y" }}</p>
+    <div class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-meta-line">
+        {{ page.date | date: "%B %-d, %Y" }} &middot; Jordan Waxman{% if page.categories.size > 0 %} &middot; {% for cat in page.categories %}{{ cat }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}
+      </p>
+      {% if page.tags.size > 0 %}
+      <div class="post-tags-line">
+        {% for tag in page.tags %}<span class="post-tag">{{ tag }}</span>{% endfor %}
+      </div>
+      {% endif %}
+    </div>
+
     {{ content }}
-    <div style="margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border);">
+
+    <div class="email-capture">
+      <h3>Get the next post</h3>
+      <p>Get notified when a new post drops. I'll email you when I publish something new.</p>
+      <form class="email-capture-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="email" name="email" placeholder="your@email.com" required>
+        <button type="submit">Notify me</button>
+      </form>
+    </div>
+
+    <div style="padding-top: 16px; border-top: 1px solid var(--border);">
       <a href="/blog" style="color: var(--text-muted); font-size: 14px;">&larr; Back to Blog</a>
     </div>
   </div>
