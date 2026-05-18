@@ -1,4 +1,4 @@
 title: Jordan Waxman
 description: AI readiness audits, workflow builds, and operations for SMBs and ops teams.
 url: https://jordanwaxman.com
-permalink: pretty
+permalink: /blog/:title/
