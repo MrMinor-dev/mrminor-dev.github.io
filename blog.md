@@ -8,6 +8,21 @@ description: Notes on AI, automation, and operations.
   <div class="container">
     <h1>Blog</h1>
     <p>Notes on AI, automation, and operations.</p>
-    <p class="blog-empty">First post coming.</p>
+
+    {% if site.posts.size == 0 %}
+      <p class="blog-empty">First post coming.</p>
+    {% else %}
+      <ul class="blog-list">
+        {% for post in site.posts %}
+          <li class="blog-item">
+            <p class="blog-item-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+            <a class="blog-item-title" href="{{ post.url }}">{{ post.title }}</a>
+            {% if post.excerpt %}
+            <p class="blog-item-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
   </div>
 </div>
