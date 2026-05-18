@@ -749,3 +749,166 @@ a:hover { color: var(--accent-hover); }
 
   .footer-nav { flex-direction: column; gap: 12px; }
 }
+
+
+/* === Blog List (blog.md) === */
+.blog-list {
+  list-style: none;
+  margin-top: 32px;
+}
+
+.blog-item {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.blog-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.blog-item-date {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+.blog-item-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--text);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.blog-item-title:hover {
+  color: var(--accent);
+}
+
+.blog-item-excerpt {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* === Post Meta (post.html) === */
+.post-header {
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.post-meta-line {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.post-tags-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.post-tag {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 10px;
+  text-transform: lowercase;
+}
+
+/* === Email Capture Form === */
+.email-capture {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 36px 40px;
+  margin: 64px 0 48px;
+  text-align: center;
+}
+
+.email-capture h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.email-capture p {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.email-capture-form {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.email-capture-form input[type="email"] {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 10px 16px;
+  width: 280px;
+  outline: none;
+  transition: border-color 150ms;
+}
+
+.email-capture-form input[type="email"]:focus {
+  border-color: var(--accent);
+}
+
+.email-capture-form button {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--bg);
+  background: var(--accent);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: background 150ms;
+  white-space: nowrap;
+}
+
+.email-capture-form button:hover {
+  background: var(--accent-hover);
+}
+
+@media (max-width: 700px) {
+  .post-title { font-size: 32px; }
+  .email-capture { padding: 28px 20px; }
+  .email-capture-form { flex-direction: column; align-items: center; }
+  .email-capture-form input[type="email"] { width: 100%; max-width: 320px; }
+}
