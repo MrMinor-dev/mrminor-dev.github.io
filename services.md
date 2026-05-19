@@ -13,7 +13,7 @@ description: AI readiness assessments, workflow builds, AI agents, back-office a
     <p class="page-intro">Below: every offering with scope, timeline, and current pricing. Productized assessments are fixed-fee. Build pricing is scope-dependent and confirmed at the kickoff call.</p>
 
     <div class="services-cta-block">
-      <a href="https://calendar.app.google/mgxB9w3ziGyTGLAw9" class="btn-cta" target="_blank" rel="noopener">Book a scoping call &rarr;</a>
+      <a href="/contact" class="btn-cta" target="_blank" rel="noopener">Book a scoping call &rarr;</a>
     </div>
 
     <nav class="lane-nav">

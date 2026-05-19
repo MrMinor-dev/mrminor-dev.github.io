@@ -9,7 +9,7 @@ description: Readiness audits, workflow builds, AI agents, and integration work 
     <h1>You know AI matters for your business. You haven&rsquo;t figured out where it actually fits.</h1>
     <p class="hero-subhead">Readiness audits, workflow builds, AI agents, integration work. For SMBs and ops teams who want AI that fits how they run.</p>
     <p class="hero-cred">14 years at Amazon and Flexport making big operations actually work. Now I help clients make AI work for them.</p>
-    <a href="https://calendar.app.google/mgxB9w3ziGyTGLAw9" class="btn-primary" target="_blank" rel="noopener">Book a 30-min scoping call &rarr;</a>
+    <a href="/contact" class="btn-primary" target="_blank" rel="noopener">Book a 30-min scoping call &rarr;</a>
   </div>
 </section>
 
