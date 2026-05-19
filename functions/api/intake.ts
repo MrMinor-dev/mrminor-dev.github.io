@@ -15,6 +15,7 @@ export async function onRequestPost({
         "x-intake-secret": env.INTAKE_SECRET,
         "cf-connecting-ip":
           request.headers.get("cf-connecting-ip") ?? "",
+        "x-e2e-bypass": request.headers.get("x-e2e-bypass") ?? "",
       },
       body,
     }
