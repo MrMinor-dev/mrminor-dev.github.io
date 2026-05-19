@@ -10,7 +10,7 @@ description: Tell me what you&rsquo;re working on. I&rsquo;ll review your note a
       <h1>Let&rsquo;s talk.</h1>
       <p class="intake-intro">Tell me what you&rsquo;re working on. I&rsquo;ll review your note and we&rsquo;ll book a 30-minute call from there.</p>
 
-      <form id="intake-form" novalidate class="intake-form">
+      <form id="intake-form" class="intake-form">
 
         <div class="form-field">
           <label for="contactName">Your name</label>
@@ -101,7 +101,7 @@ description: Tell me what you&rsquo;re working on. I&rsquo;ll review your note a
       '<div class="form-success-wrap">' +
         '<h2>Thanks &mdash; let&rsquo;s talk.</h2>' +
         '<p>Pick a 30-minute slot below. I&rsquo;ll review your note before the call.</p>' +
-        '<iframe src="' + redirectUrl + '" width="100%" height="620" loading="lazy" style="border:none;margin-top:24px;border-radius:4px;"></iframe>' +
+        '<iframe src="' + redirectUrl + '" width="100%" height="800" loading="lazy" style="border:none;margin-top:24px;border-radius:4px;min-height:600px;max-height:90vh;"></iframe>' +
         '<p style="margin-top:12px;font-size:14px;color:var(--text-muted);">' +
           '<a href="' + redirectUrl + '" target="_blank" rel="noopener">Open booking page in a new tab &rarr;</a>' +
         '</p>' +
