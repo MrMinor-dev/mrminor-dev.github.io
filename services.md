@@ -124,7 +124,7 @@ description: AI readiness assessments, workflow builds, AI agents, back-office a
     <p class="meta-line"><strong>Investment:</strong> $5,000 fixed-fee.</p>
 
     <div class="services-cta-block">
-      <a href="https://calendar.app.google/mgxB9w3ziGyTGLAw9" class="btn-cta" target="_blank" rel="noopener">Book a scoping call &rarr;</a>
+      <a href="/contact" class="btn-cta" target="_blank" rel="noopener">Book a scoping call &rarr;</a>
     </div>
 
     <h2 id="build">Build</h2>
@@ -209,7 +209,7 @@ description: AI readiness assessments, workflow builds, AI agents, back-office a
     <p class="meta-line"><strong>Investment:</strong> Custom-quoted at the scoping call.</p>
 
     <div class="services-cta-block">
-      <a href="https://calendar.app.google/mgxB9w3ziGyTGLAw9" class="btn-cta" target="_blank" rel="noopener">Book a scoping call &rarr;</a>
+      <a href="/contact" class="btn-cta" target="_blank" rel="noopener">Book a scoping call &rarr;</a>
     </div>
 
     <h2 id="operate">Operate</h2>
@@ -255,7 +255,7 @@ description: AI readiness assessments, workflow builds, AI agents, back-office a
     <div class="how-to-start">
       <h2 class="no-border">How to start</h2>
       <p>Every engagement starts with a 30-min scoping call. No prep needed &mdash; bring whatever&rsquo;s on your mind, we&rsquo;ll figure out together what fits.</p>
-      <a href="https://calendar.app.google/mgxB9w3ziGyTGLAw9" class="btn-cta" target="_blank" rel="noopener">Book a 30-min scoping call &rarr;</a>
+      <a href="/contact" class="btn-cta" target="_blank" rel="noopener">Book a 30-min scoping call &rarr;</a>
     </div>
 
   </div>

@@ -49,7 +49,7 @@ description: Readiness audits, workflow builds, AI agents, and integration work 
         <p>In 1 week: a written assessment of your top automation opportunities, ranked by impact and feasibility. One call in, async analysis, one call out. No multi-week discovery sprint.</p>
         <p>If you&rsquo;ve already turned on Claude for Small Business, Copilot, or another pre-built, the assessment tells you what they cover for your case and what needs custom work. If you haven&rsquo;t, it tells you whether one would fit before you spend on tools.</p>
         <p>Next step: a workflow build, AI agent, or back-office automation &mdash; quoted at the debrief call.</p>
-        <a href="/services#ai-readiness-assessment" class="card-cta">Book a scoping call &rarr;</a>
+        <a href="/services#ai-readiness-assessment" class="card-cta">See details &rarr;</a>
       </div>
 
       <div class="card">
@@ -59,7 +59,7 @@ description: Readiness audits, workflow builds, AI agents, and integration work 
         <p>In 1.5&ndash;2 weeks: an architecture review of what you actually built. Auth, data handling, scaling, monitoring, security, regulated-shape compliance fit. Multi-stakeholder format: kickoff with founder, tech lead, and ops or security; code walkthrough; written review delivered as a roadmap; 60-min debrief.</p>
         <p>Top-5 gaps ranked catastrophic / serious / monitor. What to fix in 30 days, what to queue for 30&ndash;90, what to defer with eyes open.</p>
         <p>Next step: build the gaps directly, or advisory while your team executes the roadmap.</p>
-        <a href="/services#production-readiness-review" class="card-cta">Book a scoping call &rarr;</a>
+        <a href="/services#production-readiness-review" class="card-cta">See details &rarr;</a>
       </div>
 
       <div class="card">
@@ -69,7 +69,7 @@ description: Readiness audits, workflow builds, AI agents, and integration work 
         <p>In 1&ndash;2 weeks: one end-to-end workflow built and deployed on your stack. n8n, Zapier, custom API, whatever you&rsquo;re running. Failure-mode handling so it doesn&rsquo;t break silently. Runbook so your team can operate it without me.</p>
         <p>If a vendor pre-built handles your case, I&rsquo;ll tell you and you save the money. Most of the time it doesn&rsquo;t &mdash; the workflow sits between systems they don&rsquo;t connect, or runs on logic they don&rsquo;t encode.</p>
         <p>Next step: more workflows, an embedded AI agent, or a monitoring retainer to keep what&rsquo;s running healthy.</p>
-        <a href="/services#workflow-automation-build" class="card-cta">Book a scoping call &rarr;</a>
+        <a href="/services#workflow-automation-build" class="card-cta">See details &rarr;</a>
       </div>
 
       <div class="card">
@@ -79,7 +79,7 @@ description: Readiness audits, workflow builds, AI agents, and integration work 
         <p>Coverage that tells you a thing broke before your customer does. Health checks across the systems I built you, alerts routed to whoever needs to act, and a monthly tune-up call where we fix the small stuff before it grows.</p>
         <p>Everything I build self-monitors from day one. The retainer keeps it that way as your stack shifts underneath. $300&ndash;500/mo, depending on how much you&rsquo;re running.</p>
         <p>Next step: expand coverage as you build more, or a full reliability sweep across the stack you&rsquo;ve already got.</p>
-        <a href="/services#monitoring-retainer" class="card-cta">Book a scoping call &rarr;</a>
+        <a href="/services#monitoring-retainer" class="card-cta">See details &rarr;</a>
       </div>
 
       <div class="card card-fifth">
@@ -89,7 +89,7 @@ description: Readiness audits, workflow builds, AI agents, and integration work 
         <p>An embedded AI operator running your build backlog week to week. Automations, agents, integrations &mdash; whatever&rsquo;s next in the queue gets scoped, built, and shipped. No per-project contracting, no re-onboarding every time.</p>
         <p>Three tiers: $5,000/mo for one active build per quarter. $8,000/mo for multiple concurrent builds. $12,000&ndash;$15,000/mo for weekly cadence and enterprise-scale iteration.</p>
         <p>Next step: a scoping call to map your backlog and pick the tier. Most retainers start from a completed workflow or agent build.</p>
-        <a href="/services#implementation-retainer" class="card-cta">Book a scoping call &rarr;</a>
+        <a href="/services#implementation-retainer" class="card-cta">See details &rarr;</a>
       </div>
 
     </div>

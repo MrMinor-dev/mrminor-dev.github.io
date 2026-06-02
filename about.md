@@ -30,7 +30,7 @@ description: 14 years making large, complicated things run reliably. Now buildin
       <h2>Who I work with</h2>
       <p>SMBs and family offices, mostly $1M&ndash;$10M revenue. Ops teams. Post-MVP startup founders who shipped fast and now need it to survive production. Operators who know AI matters and want to figure out where it fits &mdash; not someone to pitch them tools.</p>
       <p>If that&rsquo;s you, let&rsquo;s chat.</p>
-      <a href="https://calendar.app.google/mgxB9w3ziGyTGLAw9" class="btn-primary" style="margin-top: 8px; display: inline-block;" target="_blank" rel="noopener">Book a 30-min scoping call &rarr;</a>
+      <a href="/contact" class="btn-primary" style="margin-top: 8px; display: inline-block;" target="_blank" rel="noopener">Book a 30-min scoping call &rarr;</a>
     </div>
 
   </div>
