@@ -16,11 +16,44 @@ description: AI readiness assessments, workflow builds, AI agents, back-office a
       <a href="/contact" class="btn-cta" target="_blank" rel="noopener">Book a scoping call &rarr;</a>
     </div>
 
-    <nav class="lane-nav">
-      <a href="#diagnose">Diagnose</a>
-      <a href="#build">Build</a>
-      <a href="#operate">Operate</a>
-    </nav>
+    <p class="lane-cards-caption">Most engagements move left to right &mdash; diagnose where AI fits, build it, then keep it running.</p>
+
+    <div class="lane-cards">
+
+      <div class="card lane-card">
+        <h2 class="lane-card-title"><a href="#diagnose">Diagnose</a></h2>
+        <p class="lane-card-intro">Written deliverables. Fixed scope, fixed fee.</p>
+        <ul class="lane-card-list">
+          <li><a href="#ai-readiness-assessment">AI Readiness Assessment</a><span class="lane-card-price">$500</span></li>
+          <li><a href="#ai-operations-audit">AI Operations Audit</a><span class="lane-card-price">$4,000</span></li>
+          <li><a href="#ai-governance-audit">AI Governance Audit</a><span class="lane-card-price">$3,000</span></li>
+          <li><a href="#production-readiness-review">Production Readiness Review</a><span class="lane-card-price">$5,000</span></li>
+        </ul>
+      </div>
+
+      <div class="card lane-card">
+        <h2 class="lane-card-title"><a href="#build">Build</a></h2>
+        <p class="lane-card-intro">Scoped projects. Fixed deliverable, fixed timeline.</p>
+        <ul class="lane-card-list">
+          <li><a href="#workflow-automation-build">Workflow Automation Build</a><span class="lane-card-price">from $1,500</span></li>
+          <li><a href="#ai-agent-build">AI Agent Build</a><span class="lane-card-price">from $2,500</span></li>
+          <li><a href="#back-office-automation-build">Back-Office Automation Build</a><span class="lane-card-price">from $2,500</span></li>
+          <li><a href="#ai-integration">AI Integration</a><span class="lane-card-price">from $4,000</span></li>
+          <li><a href="#knowledge-capture-wiki-pilot">Knowledge Capture + Wiki Pilot</a><span class="lane-card-price">custom</span></li>
+        </ul>
+      </div>
+
+      <div class="card lane-card">
+        <h2 class="lane-card-title"><a href="#operate">Operate</a></h2>
+        <p class="lane-card-intro">Recurring retainers. Keep what&rsquo;s built healthy.</p>
+        <ul class="lane-card-list">
+          <li><a href="#monitoring-retainer">Monitoring Retainer</a><span class="lane-card-price">$300&ndash;500/mo</span></li>
+          <li><a href="#implementation-retainer">Implementation Retainer</a><span class="lane-card-price">from $5,000/mo</span></li>
+          <li><a href="#advisory-retainer">Advisory Retainer</a><span class="lane-card-price">from $2,000/mo</span></li>
+        </ul>
+      </div>
+
+    </div>
 
     <h2 id="diagnose">Diagnose</h2>
     <p class="lane-intro">Written deliverables. Fixed scope, fixed timeline, fixed fee. Output: working doc + debrief call.</p>
