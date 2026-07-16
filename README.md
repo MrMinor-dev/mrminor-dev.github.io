@@ -38,10 +38,10 @@ The site is updated regularly as new projects and frameworks are added to the po
 
 ## Contact
 
-- **Email:** waxmanj@mac.com
-- **LinkedIn:** [linkedin.com/in/jordan-waxman](https://linkedin.com/in/jordan-waxman)
+- **Email:** jordan@jordanwaxman.com
+- **LinkedIn:** [linkedin.com/in/waxmanjordan](https://linkedin.com/in/waxmanjordan)
 - **GitHub:** [@MrMinor-dev](https://github.com/MrMinor-dev)
 
 ---
 
-*Last Updated: October 2025*
+*Last Updated: July 2026*

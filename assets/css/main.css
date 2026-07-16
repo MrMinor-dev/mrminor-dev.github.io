@@ -372,12 +372,33 @@ a:hover { color: var(--accent-hover); }
   color: var(--accent-hover);
 }
 
-/* Fifth card — centered */
+/* Fifth card, centered (legacy, unused by current homepage) */
 .card-fifth {
   grid-column: 1 / -1;
   max-width: 50%;
   margin: 0 auto;
   width: 100%;
+}
+
+/* Three-up card grid (homepage A1 / Build / Operate) */
+.cards-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-price {
+  font-family: 'DM Serif Display', serif;
+  font-size: 20px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.guarantee-badge {
+  background: var(--accent-light);
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 12px !important;
 }
 
 /* === How I Work (Home) === */
@@ -420,6 +441,79 @@ a:hover { color: var(--accent-hover); }
 .story-links a:hover {
   color: var(--accent-hover);
   text-decoration: underline;
+}
+
+/* Client Zero block */
+.client-zero-numbers {
+  list-style: none;
+  margin: 4px 0 20px;
+  padding: 0;
+}
+
+.client-zero-numbers li {
+  font-size: 16px;
+  color: var(--text);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.client-zero-numbers li:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.correction-loop {
+  margin: 32px 0;
+}
+
+.correction-loop h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.correction-loop-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px 24px;
+  margin: 16px 0;
+}
+
+.correction-loop-item p {
+  font-size: 15px;
+  margin-bottom: 8px;
+  max-width: none;
+}
+
+.correction-loop-item p:last-child {
+  margin-bottom: 0;
+}
+
+.correction-loop-fix,
+.correction-loop-constraint {
+  color: var(--text-muted);
+}
+
+.self-assessment-slot {
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  padding: 20px 24px;
+  margin: 24px 0;
+}
+
+.self-assessment-label {
+  font-size: 15px;
+  color: var(--text);
+  margin-bottom: 4px !important;
+}
+
+.self-assessment-status {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 0 !important;
 }
 
 /* === Page Content (Services, About, Contact, Blog) === */

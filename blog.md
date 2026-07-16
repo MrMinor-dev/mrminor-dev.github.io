@@ -10,7 +10,7 @@ description: Notes on AI, automation, and operations.
     <p>Notes on AI, automation, and operations.</p>
 
     {% if site.posts.size == 0 %}
-      <p class="blog-empty">First post coming.</p>
+      <p class="blog-empty">Updates land on my <a href="https://linkedin.com/in/waxmanjordan" target="_blank" rel="noopener">LinkedIn</a> first.</p>
     {% else %}
       <ul class="blog-list">
         {% for post in site.posts %}
